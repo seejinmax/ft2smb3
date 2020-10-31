@@ -1,2 +1,4 @@
 # YaSailMusic
-Yandex Music for Sailfish O
+Yandex Music for Sailfish OS
+<br>
+<img src="https://openrepos.net/sit
