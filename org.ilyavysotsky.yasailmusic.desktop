@@ -6,4 +6,6 @@ Exec=/usr/bin/org.ilyavysotsky.yasailmusic
 Name=Yandex Music
 Name[ru]=Яндекс Музыка
 
-[X-Sailj
+[X-Sailjail]
+Permissions=Audio;Internet
+OrganizationName=
