@@ -8,4 +8,5 @@ Name[ru]=Яндекс Музыка
 
 [X-Sailjail]
 Permissions=Audio;Internet
-OrganizationName=
+OrganizationName=org.ilyavysotsky
+ApplicationName=yasailmusic
