@@ -6,3 +6,6 @@ CONFIG += \
 PKGCONFIG += \
 
 SOURCES += \
+    src/apirequest.cpp \
+    src/authorization.cpp \
+  
