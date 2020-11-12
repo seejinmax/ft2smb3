@@ -1,1 +1,3 @@
-TARGET = 
+TARGET = org.ilyavysotsky.yasailmusic
+
+CONFIG += \
