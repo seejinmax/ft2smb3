@@ -14,4 +14,8 @@ SOURCES += \
     src/models/searchmodel.cpp \
     src/settings.cpp \
     src/track.cpp \
-    src/m
+    src/main.cpp
+
+HEADERS += \
+    src/apirequest.h \
+    src/a
