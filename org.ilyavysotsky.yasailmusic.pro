@@ -10,4 +10,5 @@ SOURCES += \
     src/authorization.cpp \
     src/cacher.cpp \
     src/downloader.cpp \
-    s
+    src/models/playlistmodel.cpp \
+    src/models/searchmodel.cpp
