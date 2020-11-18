@@ -11,4 +11,7 @@ SOURCES += \
     src/cacher.cpp \
     src/downloader.cpp \
     src/models/playlistmodel.cpp \
-    src/models/searchmodel.cpp
+    src/models/searchmodel.cpp \
+    src/settings.cpp \
+    src/track.cpp \
+    src/m
