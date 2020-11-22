@@ -20,4 +20,5 @@ HEADERS += \
     src/apirequest.h \
     src/authorization.h \
     src/cacher.h \
-  
+    src/downloader.h \
+    src/models/playlist
