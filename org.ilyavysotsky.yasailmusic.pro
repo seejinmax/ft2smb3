@@ -18,4 +18,6 @@ SOURCES += \
 
 HEADERS += \
     src/apirequest.h \
-    src/a
+    src/authorization.h \
+    src/cacher.h \
+  
