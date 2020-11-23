@@ -21,4 +21,6 @@ HEADERS += \
     src/authorization.h \
     src/cacher.h \
     src/downloader.h \
-    src/models/playlist
+    src/models/playlistmodel.h \
+    src/models/searchmodel.h \
+   
