@@ -23,4 +23,8 @@ HEADERS += \
     src/downloader.h \
     src/models/playlistmodel.h \
     src/models/searchmodel.h \
+    src/settings.h \
+    src/track.h
+
+DISTFILES += \
    
