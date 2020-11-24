@@ -28,4 +28,7 @@ HEADERS += \
 
 DISTFILES += \
     rpm/org.ilyavysotsky.yasailmusic.yaml \
-    LI
+    LICENSE \
+    README.md \
+
+SAILFISHAPP_ICONS = 86x86 108x1
