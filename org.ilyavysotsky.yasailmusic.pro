@@ -27,4 +27,5 @@ HEADERS += \
     src/track.h
 
 DISTFILES += \
-   
+    rpm/org.ilyavysotsky.yasailmusic.yaml \
+    LI
