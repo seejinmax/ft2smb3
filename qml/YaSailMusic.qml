@@ -10,4 +10,6 @@ import "pages"
 
 ApplicationWindow {
     id: root
-    ini
+    initialPage: {
+        if (auth.checkToken()) {
+       
