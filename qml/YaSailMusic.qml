@@ -7,3 +7,7 @@ import Amber.Mpris 1.0
 import org.ilyavysotsky.yasailmusic 1.0
 
 import "pages"
+
+ApplicationWindow {
+    id: root
+    ini
