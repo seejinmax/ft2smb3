@@ -12,4 +12,4 @@ ApplicationWindow {
     id: root
     initialPage: {
         if (auth.checkToken()) {
-       
+            return Qt.createComponent(Qt.resolvedUrl("pages/
