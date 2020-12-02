@@ -12,4 +12,6 @@ ApplicationWindow {
     id: root
     initialPage: {
         if (auth.checkToken()) {
-            return Qt.createComponent(Qt.resolvedUrl("pages/
+            return Qt.createComponent(Qt.resolvedUrl("pages/MainPage.qml"))
+        } else {
+            re
