@@ -18,4 +18,5 @@ ApplicationWindow {
         }
     }
 
-    cover: Qt.
+    cover: Qt.resolvedUrl("cover/CoverPage.qml")
+    allowedOri
