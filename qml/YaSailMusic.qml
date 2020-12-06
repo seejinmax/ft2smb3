@@ -14,4 +14,4 @@ ApplicationWindow {
         if (auth.checkToken()) {
             return Qt.createComponent(Qt.resolvedUrl("pages/MainPage.qml"))
         } else {
-            re
+            return Qt.createComponent(Qt.resolvedUrl("pages/LoginP
