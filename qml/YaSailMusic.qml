@@ -19,4 +19,4 @@ ApplicationWindow {
     }
 
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
-    allowedOri
+    allowedOrientations: defaultAllowedOrientations
