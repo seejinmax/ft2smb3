@@ -23,4 +23,5 @@ ApplicationWindow {
 
     PlaylistModel{
         id: playListModel
-   
+        onCurrentIndexChanged: {
+            
