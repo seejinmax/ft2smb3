@@ -24,4 +24,4 @@ ApplicationWindow {
     PlaylistModel{
         id: playListModel
         onCurrentIndexChanged: {
-            
+            rootAudio.source = playListMode
