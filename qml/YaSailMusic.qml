@@ -26,4 +26,5 @@ ApplicationWindow {
         onCurrentIndexChanged: {
             rootAudio.source = playListModel.get(currentIndex).fileUrl;
             mprisPlayer.song = playListModel.get(currentIndex).trackName
-            mprisPlayer.artist = playListModel.get(currentInde
+            mprisPlayer.artist = playListModel.get(currentIndex).artistName
+            playListModel.sendFeed
