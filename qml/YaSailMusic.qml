@@ -30,4 +30,7 @@ ApplicationWindow {
             playListModel.sendFeedback("trackFinished")
             rootAudio.play()
             //playListModel.sendFeedback("trackStarted")
-            //playListMode
+            //playListModel.playTrack()
+
+            //
+            console.l
