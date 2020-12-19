@@ -29,4 +29,5 @@ ApplicationWindow {
             mprisPlayer.artist = playListModel.get(currentIndex).artistName
             playListModel.sendFeedback("trackFinished")
             rootAudio.play()
-            //playListModel.send
+            //playListModel.sendFeedback("trackStarted")
+            //playListMode
