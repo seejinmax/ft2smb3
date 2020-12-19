@@ -28,4 +28,5 @@ ApplicationWindow {
             mprisPlayer.song = playListModel.get(currentIndex).trackName
             mprisPlayer.artist = playListModel.get(currentIndex).artistName
             playListModel.sendFeedback("trackFinished")
-            rootAudi
+            rootAudio.play()
+            //playListModel.send
