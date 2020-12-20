@@ -40,4 +40,5 @@ ApplicationWindow {
 
     SearchModel{
         id: searchModel
-        onCur
+        onCurrentIndexChanged: {
+            rootAudio.source = sea
