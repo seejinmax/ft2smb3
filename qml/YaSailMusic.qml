@@ -38,4 +38,6 @@ ApplicationWindow {
         }
     }
 
-   
+    SearchModel{
+        id: searchModel
+        onCur
