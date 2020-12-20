@@ -41,4 +41,5 @@ ApplicationWindow {
     SearchModel{
         id: searchModel
         onCurrentIndexChanged: {
-            rootAudio.source = sea
+            rootAudio.source = searchModel.get(currentIndex).fileUrl;
+          
