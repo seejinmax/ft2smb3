@@ -33,4 +33,9 @@ ApplicationWindow {
             //playListModel.playTrack()
 
             //
-            console.l
+            console.log("Track started")
+
+        }
+    }
+
+   
