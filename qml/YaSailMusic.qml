@@ -42,4 +42,5 @@ ApplicationWindow {
         id: searchModel
         onCurrentIndexChanged: {
             rootAudio.source = searchModel.get(currentIndex).fileUrl;
-            mprisPlayer.song = searchModel.get(currentI
+            mprisPlayer.song = searchModel.get(currentIndex).trackName
+            mprisPlayer.artist
