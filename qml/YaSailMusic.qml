@@ -44,4 +44,6 @@ ApplicationWindow {
             rootAudio.source = searchModel.get(currentIndex).fileUrl;
             mprisPlayer.song = searchModel.get(currentIndex).trackName
             mprisPlayer.artist = searchModel.get(currentIndex).artistName
-            searchModel.sendFeedback("trackFi
+            searchModel.sendFeedback("trackFinished")
+            rootAudio.play()
+        
