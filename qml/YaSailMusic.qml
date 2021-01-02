@@ -56,4 +56,6 @@ ApplicationWindow {
     }
 
     MediaPlayer{
-  
+        id: rootAudio
+        onStopped: {
+            if (roo
