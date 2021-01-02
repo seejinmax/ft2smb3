@@ -51,3 +51,9 @@ ApplicationWindow {
 
             //
             console.log("Track started")
+
+        }
+    }
+
+    MediaPlayer{
+  
