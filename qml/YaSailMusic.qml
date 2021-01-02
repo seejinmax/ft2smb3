@@ -47,4 +47,7 @@ ApplicationWindow {
             searchModel.sendFeedback("trackFinished")
             rootAudio.play()
             //playListModel.sendFeedback("trackStarted")
-       
+            //playListModel.playTrack()
+
+            //
+  
