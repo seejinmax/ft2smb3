@@ -50,4 +50,4 @@ ApplicationWindow {
             //playListModel.playTrack()
 
             //
-  
+            console.log("Track started")
