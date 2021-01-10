@@ -59,4 +59,6 @@ ApplicationWindow {
         id: rootAudio
         onStopped: {
             if (rootAudio.status == MediaPlayer.EndOfMedia) {
-    
+                console.log("Track finished")
+
+      
