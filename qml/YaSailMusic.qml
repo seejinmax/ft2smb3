@@ -61,4 +61,4 @@ ApplicationWindow {
             if (rootAudio.status == MediaPlayer.EndOfMedia) {
                 console.log("Track finished")
 
-      
+                ++playListModel.currentI
