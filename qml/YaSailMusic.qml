@@ -58,4 +58,5 @@ ApplicationWindow {
     MediaPlayer{
         id: rootAudio
         onStopped: {
-            if (roo
+            if (rootAudio.status == MediaPlayer.EndOfMedia) {
+    
