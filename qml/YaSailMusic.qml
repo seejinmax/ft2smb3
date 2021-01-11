@@ -69,4 +69,5 @@ ApplicationWindow {
     MprisPlayer {
         id: mprisPlayer
 
-        property string artist: qs
+        property string artist: qsTr("Loading")
+        property string song: qsTr("ta
