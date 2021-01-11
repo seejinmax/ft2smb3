@@ -70,4 +70,7 @@ ApplicationWindow {
         id: mprisPlayer
 
         property string artist: qsTr("Loading")
-        property string song: qsTr("ta
+        property string song: qsTr("tags...")
+
+        serviceName: "yandex-music"
+        identity: "YaSa
