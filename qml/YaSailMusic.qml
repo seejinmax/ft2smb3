@@ -67,4 +67,6 @@ ApplicationWindow {
     }
 
     MprisPlayer {
-    
+        id: mprisPlayer
+
+        property string artist: qs
