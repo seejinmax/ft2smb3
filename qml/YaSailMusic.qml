@@ -73,4 +73,6 @@ ApplicationWindow {
         property string song: qsTr("tags...")
 
         serviceName: "yandex-music"
-        identity: "YaSa
+        identity: "YaSailMusic"
+        supportedUriSchemes: ["file"]
+ 
