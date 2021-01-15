@@ -75,4 +75,4 @@ ApplicationWindow {
         serviceName: "yandex-music"
         identity: "YaSailMusic"
         supportedUriSchemes: ["file"]
- 
+        supportedMimeTypes: ["audio/x-wav", "aud
