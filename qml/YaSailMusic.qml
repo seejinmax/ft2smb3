@@ -75,4 +75,7 @@ ApplicationWindow {
         serviceName: "yandex-music"
         identity: "YaSailMusic"
         supportedUriSchemes: ["file"]
-        supportedMimeTypes: ["audio/x-wav", "aud
+        supportedMimeTypes: ["audio/x-wav", "audio/x-vorbis+ogg", "audio/mpeg"]
+
+
+        canSeek
