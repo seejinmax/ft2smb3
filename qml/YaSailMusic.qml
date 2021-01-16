@@ -83,3 +83,5 @@ ApplicationWindow {
         canControl: true
 
         canGoNext: true
+        canGoPrevious: true
+        canPause
