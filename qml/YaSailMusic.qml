@@ -84,4 +84,7 @@ ApplicationWindow {
 
         canGoNext: true
         canGoPrevious: true
-        canPause
+        canPause: true
+        canPlay: true
+
+        playbackStatus: (
