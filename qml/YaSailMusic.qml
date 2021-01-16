@@ -87,4 +87,4 @@ ApplicationWindow {
         canPause: true
         canPlay: true
 
-        playbackStatus: (
+        playbackStatus: (rootAudio.playbackState === MediaPlayer.Pl
