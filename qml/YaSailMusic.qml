@@ -78,4 +78,8 @@ ApplicationWindow {
         supportedMimeTypes: ["audio/x-wav", "audio/x-vorbis+ogg", "audio/mpeg"]
 
 
-        canSeek
+        canSeek: true
+
+        canControl: true
+
+        canGoNext: true
