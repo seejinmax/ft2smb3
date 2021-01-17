@@ -87,4 +87,6 @@ ApplicationWindow {
         canPause: true
         canPlay: true
 
-        playbackStatus: (rootAudio.playbackState === MediaPlayer.Pl
+        playbackStatus: (rootAudio.playbackState === MediaPlayer.PlayingState) ? Mpris.Playing : Mpris.Paused
+
+        onArti
