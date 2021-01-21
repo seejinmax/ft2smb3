@@ -90,4 +90,5 @@ ApplicationWindow {
         playbackStatus: (rootAudio.playbackState === MediaPlayer.PlayingState) ? Mpris.Playing : Mpris.Paused
 
         onArtistChanged: {
-            var metadata = mprisPlayer.
+            var metadata = mprisPlayer.metadata
+            metadata[Mpris.metadat
