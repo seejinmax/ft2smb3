@@ -91,4 +91,5 @@ ApplicationWindow {
 
         onArtistChanged: {
             var metadata = mprisPlayer.metadata
-            metadata[Mpris.metadataToString(Mpris.Artist)] = [artist] // List o
+            metadata[Mpris.metadataToString(Mpris.Artist)] = [artist] // List of strings
+            mprisPlayer.metadata = m
