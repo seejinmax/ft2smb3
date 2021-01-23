@@ -96,4 +96,5 @@ ApplicationWindow {
         }
 
         onSongChanged: {
- 
+            var metadata = mprisPlayer.metadata
+            
