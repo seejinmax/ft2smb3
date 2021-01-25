@@ -97,4 +97,4 @@ ApplicationWindow {
 
         onSongChanged: {
             var metadata = mprisPlayer.metadata
-            
+            metadata[Mpris.metadataToString(Mpris.Tit
