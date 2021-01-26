@@ -101,4 +101,6 @@ ApplicationWindow {
             mprisPlayer.metadata = metadata
         }
 
-        onPau
+        onPauseRequested: {
+            rootAudio.pause()
+       
