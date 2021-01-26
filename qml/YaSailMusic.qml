@@ -98,4 +98,7 @@ ApplicationWindow {
         onSongChanged: {
             var metadata = mprisPlayer.metadata
             metadata[Mpris.metadataToString(Mpris.Title)] = song // String
-            mpri
+            mprisPlayer.metadata = metadata
+        }
+
+        onPau
