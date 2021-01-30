@@ -105,4 +105,6 @@ ApplicationWindow {
             rootAudio.pause()
         }
         onPlayRequested: {
-            rootAudio.
+            rootAudio.play()
+        }
+        onPlayPauseRequested: {
