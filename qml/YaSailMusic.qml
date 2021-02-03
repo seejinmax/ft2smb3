@@ -108,4 +108,6 @@ ApplicationWindow {
             rootAudio.play()
         }
         onPlayPauseRequested: {
-            if (rootAudio.playbackState === MediaPl
+            if (rootAudio.playbackState === MediaPlayer.PlayingState) {
+                rootAudio.pause()
+   
