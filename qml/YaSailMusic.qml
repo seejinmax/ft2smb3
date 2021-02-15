@@ -118,4 +118,6 @@ ApplicationWindow {
             rootAudio.stop()
         }
 
-        onNextRequeste
+        onNextRequested: {
+            ++playListModel.currentIndex
+        }
