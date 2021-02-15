@@ -115,4 +115,7 @@ ApplicationWindow {
             }
         }
         onStopRequested: {
-  
+            rootAudio.stop()
+        }
+
+        onNextRequeste
