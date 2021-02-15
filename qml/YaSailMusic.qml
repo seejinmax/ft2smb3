@@ -112,3 +112,7 @@ ApplicationWindow {
                 rootAudio.pause()
             } else {
                 rootAudio.play()
+            }
+        }
+        onStopRequested: {
+  
