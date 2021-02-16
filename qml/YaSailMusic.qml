@@ -122,4 +122,10 @@ ApplicationWindow {
             ++playListModel.currentIndex
         }
         onPreviousRequested: {
-            --playListModel.curren
+            --playListModel.currentIndex
+        }
+
+    }
+
+
+}
