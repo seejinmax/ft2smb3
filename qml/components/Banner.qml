@@ -5,4 +5,4 @@ MouseArea {
     id: popup
     anchors.top: parent.top
     width: parent.width
-    
+    height: message.paintedHeight + (Theme.paddingLarge
