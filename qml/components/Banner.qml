@@ -5,4 +5,6 @@ MouseArea {
     id: popup
     anchors.top: parent.top
     width: parent.width
-    height: message.paintedHeight + (Theme.paddingLarge
+    height: message.paintedHeight + (Theme.paddingLarge * 2)
+    property alias title: message.text
+    p
