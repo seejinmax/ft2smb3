@@ -7,4 +7,5 @@ MouseArea {
     width: parent.width
     height: message.paintedHeight + (Theme.paddingLarge * 2)
     property alias title: message.text
-    p
+    property alias timeout: hideTimer.interval
+    property alias backgroun
