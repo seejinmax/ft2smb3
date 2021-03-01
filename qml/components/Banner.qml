@@ -10,4 +10,7 @@ MouseArea {
     property alias timeout: hideTimer.interval
     property alias background: bg.color
     visible: opacity > 0
-    opaci
+    opacity: 0.0
+
+    Behavior on opacity {
+       
