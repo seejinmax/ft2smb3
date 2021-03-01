@@ -17,4 +17,8 @@ MouseArea {
     }
 
     Rectangle {
-      
+        id: bg
+        anchors.fill: parent
+    }
+
+ 
