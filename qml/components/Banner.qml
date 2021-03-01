@@ -13,4 +13,8 @@ MouseArea {
     opacity: 0.0
 
     Behavior on opacity {
-       
+        FadeAnimation {}
+    }
+
+    Rectangle {
+      
