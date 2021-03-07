@@ -23,4 +23,7 @@ MouseArea {
 
     Timer {
         id: hideTimer
-        triggeredOnStart: 
+        triggeredOnStart: false
+        repeat: false
+        interval: 5000
+    
