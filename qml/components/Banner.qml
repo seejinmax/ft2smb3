@@ -26,4 +26,7 @@ MouseArea {
         triggeredOnStart: false
         repeat: false
         interval: 5000
-    
+        onTriggered: popup.hide()
+    }
+
+    func
