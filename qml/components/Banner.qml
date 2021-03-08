@@ -30,4 +30,6 @@ MouseArea {
     }
 
     function hide() {
-        if (hideTimer.ru
+        if (hideTimer.running)
+            hideTimer.stop()
+        po
