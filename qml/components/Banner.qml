@@ -29,4 +29,5 @@ MouseArea {
         onTriggered: popup.hide()
     }
 
-    func
+    function hide() {
+        if (hideTimer.ru
