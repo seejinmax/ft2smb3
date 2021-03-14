@@ -37,4 +37,7 @@ MouseArea {
 
     function show() {
         popup.opacity = 1.0
-        hi
+        hideTimer.restart()
+    }
+
+    function notify(text, color)
