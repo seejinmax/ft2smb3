@@ -32,4 +32,7 @@ MouseArea {
     function hide() {
         if (hideTimer.running)
             hideTimer.stop()
-        po
+        popup.opacity = 0.0
+    }
+
+    function show() {
