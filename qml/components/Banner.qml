@@ -36,3 +36,5 @@ MouseArea {
     }
 
     function show() {
+        popup.opacity = 1.0
+        hi
