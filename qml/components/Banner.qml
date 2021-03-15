@@ -43,4 +43,6 @@ MouseArea {
     function notify(text, color) {
         popup.title = text
         if (color && (typeof(color) != "undefined"))
-           
+            bg.color = color
+        else
+          
