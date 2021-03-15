@@ -45,4 +45,4 @@ MouseArea {
         if (color && (typeof(color) != "undefined"))
             bg.color = color
         else
-          
+            bg.color = Theme.rgba(Theme.secondaryHighlight
