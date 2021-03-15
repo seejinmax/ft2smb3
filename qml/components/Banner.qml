@@ -40,4 +40,6 @@ MouseArea {
         hideTimer.restart()
     }
 
-    function notify(text, color)
+    function notify(text, color) {
+        popup.title = text
+        if (color &&
