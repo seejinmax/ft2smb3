@@ -50,4 +50,5 @@ MouseArea {
     }
 
     Label {
-        id: m
+        id: message
+        anchors.verticalCenter: popup.vert
