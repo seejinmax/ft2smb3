@@ -45,4 +45,9 @@ MouseArea {
         if (color && (typeof(color) != "undefined"))
             bg.color = color
         else
-            bg.color = Theme.rgba(Theme.secondaryHighlight
+            bg.color = Theme.rgba(Theme.secondaryHighlightColor, 0.9)
+        show()
+    }
+
+    Label {
+        id: m
