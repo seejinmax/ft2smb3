@@ -53,4 +53,5 @@ MouseArea {
         id: message
         anchors.verticalCenter: popup.verticalCenter
         font.pixelSize: Theme.fontSizeLarge
- 
+        anchors{
+            left: pare
