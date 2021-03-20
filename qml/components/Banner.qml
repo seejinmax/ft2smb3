@@ -54,4 +54,5 @@ MouseArea {
         anchors.verticalCenter: popup.verticalCenter
         font.pixelSize: Theme.fontSizeLarge
         anchors{
-            left: pare
+            left: parent.left
+            leftMargin: Theme.paddin
