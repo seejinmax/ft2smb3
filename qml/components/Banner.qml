@@ -55,4 +55,5 @@ MouseArea {
         font.pixelSize: Theme.fontSizeLarge
         anchors{
             left: parent.left
-            leftMargin: Theme.paddin
+            leftMargin: Theme.paddingLarge
+            right: parent.rig
