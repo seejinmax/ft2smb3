@@ -56,4 +56,5 @@ MouseArea {
         anchors{
             left: parent.left
             leftMargin: Theme.paddingLarge
-            right: parent.rig
+            right: parent.right
+            rightMargin: Theme.paddingL
