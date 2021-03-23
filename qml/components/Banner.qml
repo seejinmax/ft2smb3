@@ -57,4 +57,6 @@ MouseArea {
             left: parent.left
             leftMargin: Theme.paddingLarge
             right: parent.right
-            rightMargin: Theme.paddingL
+            rightMargin: Theme.paddingLarge
+        }
+        horizontalAlignment: Tex
