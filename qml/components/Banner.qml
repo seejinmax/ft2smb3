@@ -59,4 +59,5 @@ MouseArea {
             right: parent.right
             rightMargin: Theme.paddingLarge
         }
-        horizontalAlignment: Tex
+        horizontalAlignment: Text.AlignHCenter
+        elide: Text.ElideRig
