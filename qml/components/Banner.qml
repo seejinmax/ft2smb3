@@ -60,4 +60,9 @@ MouseArea {
             rightMargin: Theme.paddingLarge
         }
         horizontalAlignment: Text.AlignHCenter
-        elide: Text.ElideRig
+        elide: Text.ElideRight
+        wrapMode: Text.Wrap
+    }
+
+    onClicked: hide()
+}
