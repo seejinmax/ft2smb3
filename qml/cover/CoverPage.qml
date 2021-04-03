@@ -5,4 +5,6 @@ import QtMultimedia 5.0
 CoverBackground {
 
     Column {
-        anchors.centerIn: par
+        anchors.centerIn: parent
+        spacing: Theme.paddingMedium
+     
