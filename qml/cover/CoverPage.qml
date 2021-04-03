@@ -7,4 +7,5 @@ CoverBackground {
     Column {
         anchors.centerIn: parent
         spacing: Theme.paddingMedium
-     
+        Label {
+            visible: rootAudio
