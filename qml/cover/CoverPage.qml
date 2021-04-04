@@ -8,4 +8,4 @@ CoverBackground {
         anchors.centerIn: parent
         spacing: Theme.paddingMedium
         Label {
-            visible: rootAudio
+            visible: rootAudio.playbackState === MediaPlayer.PlayingStat
