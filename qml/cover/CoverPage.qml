@@ -9,3 +9,5 @@ CoverBackground {
         spacing: Theme.paddingMedium
         Label {
             visible: rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState
+            id: artist
+            width: contentWidth>cove
