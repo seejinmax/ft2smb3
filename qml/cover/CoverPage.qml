@@ -12,4 +12,4 @@ CoverBackground {
             id: artist
             width: contentWidth>cover.width ? cover.width : contentWidth
             anchors.horizontalCenter: parent.horizontalCenter
-            text: (rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.P
+            text: (rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState) ? playListModel.get(currentIndex).a
