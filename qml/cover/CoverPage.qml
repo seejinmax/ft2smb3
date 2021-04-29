@@ -16,3 +16,7 @@ CoverBackground {
             color: Theme.secondaryColor
             font.pixelSize: Theme.fontSizeExtraSmall
             truncationMode: TruncationMode.Fade
+        }
+
+        Label {
+            visible: 
