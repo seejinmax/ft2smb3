@@ -19,4 +19,4 @@ CoverBackground {
         }
 
         Label {
-            visible: 
+            visible: rootAudio.playbackState === MediaPlayer.PlayingSt
