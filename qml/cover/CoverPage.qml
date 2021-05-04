@@ -22,4 +22,5 @@ CoverBackground {
             visible: rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState
             id: song
             width: contentWidth>cover.width ? cover.width : contentWidth
-            anchors.horizontalCenter: parent.horizont
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: (rootAudio.playbackState === Medi
