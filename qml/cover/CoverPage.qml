@@ -21,4 +21,5 @@ CoverBackground {
         Label {
             visible: rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState
             id: song
-            width: conten
+            width: contentWidth>cover.width ? cover.width : contentWidth
+      
