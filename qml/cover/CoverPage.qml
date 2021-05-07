@@ -23,4 +23,4 @@ CoverBackground {
             id: song
             width: contentWidth>cover.width ? cover.width : contentWidth
             anchors.horizontalCenter: parent.horizontalCenter
-            text: (rootAudio.playbackState === Medi
+            text: (rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer
