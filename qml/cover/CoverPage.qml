@@ -25,4 +25,5 @@ CoverBackground {
             anchors.horizontalCenter: parent.horizontalCenter
             text: (rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState) ? playListModel.get(currentIndex).trackName : "Idle"
             color: Theme.secondaryColor
-            font.pixelSiz
+            font.pixelSize: Theme.fontSizeExtraSmall
+            truncation
