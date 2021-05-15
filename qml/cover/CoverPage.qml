@@ -26,4 +26,8 @@ CoverBackground {
             text: (rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState) ? playListModel.get(currentIndex).trackName : "Idle"
             color: Theme.secondaryColor
             font.pixelSize: Theme.fontSizeExtraSmall
-            truncation
+            truncationMode: TruncationMode.Fade
+        }
+    }
+
+    Co
