@@ -30,4 +30,6 @@ CoverBackground {
         }
     }
 
-    Co
+    CoverActionList {
+        id: activecover
+     
