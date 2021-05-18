@@ -32,4 +32,4 @@ CoverBackground {
 
     CoverActionList {
         id: activecover
-     
+        enabled: rootAudio.playbackState === MediaPlayer.Pl
