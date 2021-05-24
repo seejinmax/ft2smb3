@@ -34,4 +34,6 @@ CoverBackground {
         id: activecover
         enabled: rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState
         CoverAction {
-            iconSource: "image://them
+            iconSource: "image://theme/icon-cover-previous-song"
+            onTriggered: {
+  
