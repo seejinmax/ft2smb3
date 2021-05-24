@@ -32,4 +32,5 @@ CoverBackground {
 
     CoverActionList {
         id: activecover
-        enabled: rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState =
+        enabled: rootAudio.playbackState === MediaPlayer.PlayingState || rootAudio.playbackState === MediaPlayer.PausedState
+        Cove
