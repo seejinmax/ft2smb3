@@ -40,3 +40,6 @@ CoverBackground {
                 //label.text = playListModel.get(currentIndex).trackName
             }
         }
+
+        CoverAction {
+            iconSource: (rootA
