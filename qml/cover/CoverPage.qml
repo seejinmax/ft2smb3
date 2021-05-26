@@ -36,4 +36,5 @@ CoverBackground {
         CoverAction {
             iconSource: "image://theme/icon-cover-previous-song"
             onTriggered: {
-                --playListModel.currentInde
+                --playListModel.currentIndex
+                //label.text = playListM
