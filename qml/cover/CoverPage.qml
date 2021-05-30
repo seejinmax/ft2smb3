@@ -42,4 +42,4 @@ CoverBackground {
         }
 
         CoverAction {
-            iconSource: (rootA
+            iconSource: (rootAudio.playbackState === MediaPlayer.PlayingState) 
