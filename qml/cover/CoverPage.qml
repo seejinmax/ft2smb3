@@ -42,4 +42,4 @@ CoverBackground {
         }
 
         CoverAction {
-            iconSource: (rootAudio.playbackState === MediaPlayer.PlayingState) 
+            iconSource: (rootAudio.playbackState === MediaPlayer.PlayingState) ? "image://theme/icon-cover-pause" : "image://t
