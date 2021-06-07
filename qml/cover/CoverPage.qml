@@ -47,4 +47,6 @@ CoverBackground {
                 if (rootAudio.playbackState === MediaPlayer.PlayingState) {
                     rootAudio.pause()
                 } else {
-                    root
+                    rootAudio.play()
+                }
+        
