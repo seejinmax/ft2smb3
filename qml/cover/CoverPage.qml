@@ -49,4 +49,8 @@ CoverBackground {
                 } else {
                     rootAudio.play()
                 }
-        
+            }
+        }
+
+        CoverAction {
+           
