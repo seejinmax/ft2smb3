@@ -53,4 +53,4 @@ CoverBackground {
         }
 
         CoverAction {
-           
+            iconSource: "image://theme/icon-cover-ne
