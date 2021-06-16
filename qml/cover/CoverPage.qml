@@ -53,4 +53,6 @@ CoverBackground {
         }
 
         CoverAction {
-            iconSource: "image://theme/icon-cover-ne
+            iconSource: "image://theme/icon-cover-next-song"
+            onTriggered: {
+            
