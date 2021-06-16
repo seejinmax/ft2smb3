@@ -55,4 +55,5 @@ CoverBackground {
         CoverAction {
             iconSource: "image://theme/icon-cover-next-song"
             onTriggered: {
-            
+                ++playListModel.currentIndex
+         
