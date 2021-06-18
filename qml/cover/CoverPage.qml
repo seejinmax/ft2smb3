@@ -63,4 +63,6 @@ CoverBackground {
 
     }
 
-    Connec
+    Connections{
+        target: playListModel
+        onCurr
