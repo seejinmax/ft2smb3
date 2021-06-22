@@ -67,4 +67,5 @@ CoverBackground {
         target: playListModel
         onCurrentIndexChanged: {
             song.text = playListModel.get(currentIndex).trackName
-            ar
+            artist.text = playListModel.get(currentIndex).artistName
+ 
