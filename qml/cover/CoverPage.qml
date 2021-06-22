@@ -66,4 +66,5 @@ CoverBackground {
     Connections{
         target: playListModel
         onCurrentIndexChanged: {
-            song.text = playLis
+            song.text = playListModel.get(currentIndex).trackName
+            ar
