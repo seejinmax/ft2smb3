@@ -75,3 +75,28 @@ Page {
                     } else {
                         rootAudio.play()
                         source = "image://theme/icon-cover-play"
+                    }
+                }
+            }
+
+            Label {
+                id: mediaButtLabel
+                text: rootAudio.isPlaying ? qsTr("Pause") : qsTr("Play")
+                font.pixelSize: Theme.fontSizeMedium
+
+                anchors{
+                    verticalCenter: medbut.verticalCenter
+                }
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        playListModel.loadMyWave();
+    }
+
+    Connections{
+        target: playListModel
+        onLoadFirstDataFinished: busyIndicator.visible = false
+    }
+}
