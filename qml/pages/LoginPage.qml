@@ -83,3 +83,17 @@ Page {
 
             auth.doAuth(loginField.text, passwordField.text, codeField.text)
         }
+    }
+
+    Connections {
+        target: auth
+        onAuthorized: {
+            pageContainer.replace(Qt.resolvedUrl("MainPage.qml"))
+            loginNotification.previewBody = qsTr("Logged into Yandex Music")
+            loginNotification.publish()
+        }
+        onError: {
+            banner.notify(qsTr("Login fail!"))
+        }
+    }
+}
