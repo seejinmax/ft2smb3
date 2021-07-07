@@ -6,4 +6,6 @@ Image {
     property alias buttonEnabled: mbRect.enabled
 
     width: Theme.iconSizeLarge
-    height
+    height: Theme.iconSizeLarge
+    MouseArea {
+        id: mbMouseArea
