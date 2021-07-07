@@ -3,4 +3,7 @@ import Sailfish.Silica 1.0
 
 Image {
     property alias mouseArea: mbMouseArea
-    property alias buttonEnabled: mbRect.enabl
+    property alias buttonEnabled: mbRect.enabled
+
+    width: Theme.iconSizeLarge
+    height
