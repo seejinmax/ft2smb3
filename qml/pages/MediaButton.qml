@@ -9,3 +9,6 @@ Image {
     height: Theme.iconSizeLarge
     MouseArea {
         id: mbMouseArea
+        anchors.fill: parent
+    }
+    Rec
