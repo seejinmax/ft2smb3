@@ -11,4 +11,6 @@ Image {
         id: mbMouseArea
         anchors.fill: parent
     }
-    Rec
+    Rectangle {
+        id: mbRect
+        anchors.fill: parent
