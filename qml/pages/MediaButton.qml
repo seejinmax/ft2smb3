@@ -16,4 +16,4 @@ Image {
         anchors.fill: parent
         anchors.margins: Theme.paddingSmall
         color: mbMouseArea.pressed
-            
+               ? Theme.rgba(Theme.highlightBackgroundColor, Theme.hi
