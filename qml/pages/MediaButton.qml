@@ -15,4 +15,5 @@ Image {
         id: mbRect
         anchors.fill: parent
         anchors.margins: Theme.paddingSmall
- 
+        color: mbMouseArea.pressed
+            
