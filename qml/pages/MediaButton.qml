@@ -14,3 +14,5 @@ Image {
     Rectangle {
         id: mbRect
         anchors.fill: parent
+        anchors.margins: Theme.paddingSmall
+ 
