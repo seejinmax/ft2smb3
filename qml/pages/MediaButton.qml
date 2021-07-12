@@ -18,4 +18,6 @@ Image {
         color: mbMouseArea.pressed
                ? Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
                : Theme.rgba(Theme.primaryColor, 0.2)
-        radius: width / 2
+        radius: width / 2.0
+    }
+}
