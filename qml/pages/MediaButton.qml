@@ -17,4 +17,5 @@ Image {
         anchors.margins: Theme.paddingSmall
         color: mbMouseArea.pressed
                ? Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
-               : Theme.r
+               : Theme.rgba(Theme.primaryColor, 0.2)
+        radius: width / 2
