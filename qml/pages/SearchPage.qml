@@ -9,3 +9,6 @@ Page {
 
 
 
+    SilicaListView {
+        id: listView
+        model: searchM
