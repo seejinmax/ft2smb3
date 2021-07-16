@@ -11,4 +11,6 @@ Page {
 
     SilicaListView {
         id: listView
-        model: searchM
+        model: searchModel
+        anchors.fill: parent
+        header: 
