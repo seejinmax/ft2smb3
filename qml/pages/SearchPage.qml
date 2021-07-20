@@ -13,4 +13,6 @@ Page {
         id: listView
         model: searchModel
         anchors.fill: parent
-        header: 
+        header: SearchField {
+            id: topsearchField
+  
