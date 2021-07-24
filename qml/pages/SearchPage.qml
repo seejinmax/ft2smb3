@@ -15,4 +15,5 @@ Page {
         anchors.fill: parent
         header: SearchField {
             id: topsearchField
-  
+            width: parent.width
+            placehol
