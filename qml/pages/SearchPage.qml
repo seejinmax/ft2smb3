@@ -16,4 +16,5 @@ Page {
         header: SearchField {
             id: topsearchField
             width: parent.width
-            placehol
+            placeholderText: qsTr("Search audio...")
+            visi
