@@ -17,4 +17,5 @@ Page {
             id: topsearchField
             width: parent.width
             placeholderText: qsTr("Search audio...")
-            visi
+            visible: true
+            EnterKey.enabled: tr
