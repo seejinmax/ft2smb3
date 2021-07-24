@@ -18,4 +18,6 @@ Page {
             width: parent.width
             placeholderText: qsTr("Search audio...")
             visible: true
-            EnterKey.enabled: tr
+            EnterKey.enabled: true
+            Keys.onReturnPressed: {
+    
