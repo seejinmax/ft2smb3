@@ -20,4 +20,5 @@ Page {
             visible: true
             EnterKey.enabled: true
             Keys.onReturnPressed: {
-    
+                if (text.length !== 0) {
+                  
