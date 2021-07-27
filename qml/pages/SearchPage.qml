@@ -24,4 +24,5 @@ Page {
                     //busyIndicator.running = true
                     //search
                     //searchModel.clear()
+                    //if ( !searchModel.m_loading) {
     
