@@ -22,4 +22,6 @@ Page {
             Keys.onReturnPressed: {
                 if (text.length !== 0) {
                     //busyIndicator.running = true
-                  
+                    //search
+                    //searchModel.clear()
+    
