@@ -25,4 +25,5 @@ Page {
                     //search
                     //searchModel.clear()
                     //if ( !searchModel.m_loading) {
-    
+                     busyIndicator.visible = true
+  
