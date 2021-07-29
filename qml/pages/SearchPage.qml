@@ -26,4 +26,6 @@ Page {
                     //searchModel.clear()
                     //if ( !searchModel.m_loading) {
                      busyIndicator.visible = true
-                    searchModel.searchTra
+                    searchModel.searchTracks(text)
+                    //}
+                
