@@ -34,4 +34,6 @@ Page {
                     //visible = false
                     focus = false
 
-     
+                }
+            }
+            onTextCh
