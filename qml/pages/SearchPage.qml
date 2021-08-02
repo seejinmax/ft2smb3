@@ -28,4 +28,6 @@ Page {
                      busyIndicator.visible = true
                     searchModel.searchTracks(text)
                     //}
-                
+                }
+                else {
+                    //bus
