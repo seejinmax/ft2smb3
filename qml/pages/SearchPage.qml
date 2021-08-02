@@ -31,4 +31,7 @@ Page {
                 }
                 else {
                     //busyIndicator.running = true
-                    //
+                    //visible = false
+                    focus = false
+
+     
