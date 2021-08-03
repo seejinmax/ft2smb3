@@ -40,4 +40,7 @@ Page {
             //поисковые предложения
             }
         }
-        delegate: BackgroundItem 
+        delegate: BackgroundItem {
+            id: delegate
+
+            I
