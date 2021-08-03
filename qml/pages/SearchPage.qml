@@ -36,4 +36,6 @@ Page {
 
                 }
             }
-            onTextCh
+            onTextChanged: {
+            //поисковые предложения
+            }
