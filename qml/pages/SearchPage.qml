@@ -39,3 +39,5 @@ Page {
             onTextChanged: {
             //поисковые предложения
             }
+        }
+        delegate: BackgroundItem 
