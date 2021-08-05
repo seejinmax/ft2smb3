@@ -43,4 +43,6 @@ Page {
         delegate: BackgroundItem {
             id: delegate
 
-            I
+            Image {
+                id: cover
+                sou
