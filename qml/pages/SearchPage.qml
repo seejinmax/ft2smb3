@@ -46,4 +46,5 @@ Page {
             Image {
                 id: cover
                 source: "https://"+albumCover.replace("%%","200x200")
-   
+                width: height
+                height:
