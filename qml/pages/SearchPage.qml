@@ -53,4 +53,5 @@ Page {
             Label {
                 x: Theme.horizontalPageMargin
                 text: artistName + " - " + trackName
-           
+                anchors{
+                    left: c
