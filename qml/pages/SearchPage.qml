@@ -51,4 +51,5 @@ Page {
             }
 
             Label {
-    
+                x: Theme.horizontalPageMargin
+     
