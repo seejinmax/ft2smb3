@@ -54,4 +54,6 @@ Page {
                 x: Theme.horizontalPageMargin
                 text: artistName + " - " + trackName
                 anchors{
-                    left: c
+                    left: cover.right
+                    leftMargin: 20
+   
