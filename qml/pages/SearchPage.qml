@@ -56,4 +56,7 @@ Page {
                 anchors{
                     left: cover.right
                     leftMargin: 20
-   
+                    top: parent.top
+                }
+
+    
