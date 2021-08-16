@@ -59,4 +59,4 @@ Page {
                     top: parent.top
                 }
 
-                color:  searchModel.currentInd
+                color:  searchModel.currentIndex === index ? Theme.highlightColor : The
