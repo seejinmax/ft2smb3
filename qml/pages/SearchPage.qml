@@ -59,4 +59,5 @@ Page {
                     top: parent.top
                 }
 
-                color:  searchModel.currentIndex === index ? Theme.highlightColor : The
+                color:  searchModel.currentIndex === index ? Theme.highlightColor : Theme.primaryColor
+                //delegate.h
