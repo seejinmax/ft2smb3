@@ -66,4 +66,5 @@ Page {
             onClicked: {
 
 
-  
+                 playListModel.setNewData()
+    
