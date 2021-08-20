@@ -60,4 +60,10 @@ Page {
                 }
 
                 color:  searchModel.currentIndex === index ? Theme.highlightColor : Theme.primaryColor
-                //delegate.highlighted ? Theme.highlightColor : Theme.prima
+                //delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
+            }
+
+            onClicked: {
+
+
+  
