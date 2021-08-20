@@ -60,4 +60,4 @@ Page {
                 }
 
                 color:  searchModel.currentIndex === index ? Theme.highlightColor : Theme.primaryColor
-                //delegate.h
+                //delegate.highlighted ? Theme.highlightColor : Theme.prima
