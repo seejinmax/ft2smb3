@@ -67,4 +67,4 @@ Page {
 
 
                  playListModel.setNewData()
-    
+                playListModel.setCurrentIndex(inde
