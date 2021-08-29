@@ -68,4 +68,6 @@ Page {
 
                  playListModel.setNewData()
                 playListModel.setCurrentIndex(index)
-                //playListModel.sendFeedback("trackStarted
+                //playListModel.sendFeedback("trackStarted")
+                //playListModel.playTrack()
+    
