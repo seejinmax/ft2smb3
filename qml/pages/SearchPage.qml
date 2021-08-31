@@ -70,4 +70,7 @@ Page {
                 playListModel.setCurrentIndex(index)
                 //playListModel.sendFeedback("trackStarted")
                 //playListModel.playTrack()
-                //playListModel.sendFeedback("
+                //playListModel.sendFeedback("trackFinished")
+            }
+        }
+  
