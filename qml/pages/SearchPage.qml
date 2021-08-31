@@ -73,4 +73,5 @@ Page {
                 //playListModel.sendFeedback("trackFinished")
             }
         }
-  
+        BusyIndicator {
+                   id: busy
