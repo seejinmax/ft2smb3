@@ -78,4 +78,7 @@ Page {
                    anchors.centerIn: parent
                    size: BusyIndicatorSize.Large
                    running: visible
-            
+                   visible: false
+                }
+
+        Ve
