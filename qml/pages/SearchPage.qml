@@ -76,3 +76,4 @@ Page {
         BusyIndicator {
                    id: busyIndicator
                    anchors.centerIn: parent
+                   size: BusyIndicatorSi
