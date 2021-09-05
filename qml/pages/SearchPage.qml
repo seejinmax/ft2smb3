@@ -74,4 +74,5 @@ Page {
             }
         }
         BusyIndicator {
-                   id: busy
+                   id: busyIndicator
+                   anchors.centerIn: parent
