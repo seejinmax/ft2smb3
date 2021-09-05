@@ -76,4 +76,6 @@ Page {
         BusyIndicator {
                    id: busyIndicator
                    anchors.centerIn: parent
-                   size: BusyIndicatorSi
+                   size: BusyIndicatorSize.Large
+                   running: visible
+            
