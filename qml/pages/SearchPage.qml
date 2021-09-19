@@ -86,4 +86,5 @@ Page {
 
     Connections{
         target: searchModel
-        onLoadFirstDataF
+        onLoadFirstDataFinished: busyIndicator.visible = false
+    }
