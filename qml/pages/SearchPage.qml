@@ -81,4 +81,7 @@ Page {
                    visible: false
                 }
 
-        Ve
+        VerticalScrollDecorator {}
+    }
+
+    Connections{
