@@ -85,3 +85,5 @@ Page {
     }
 
     Connections{
+        target: searchModel
+        onLoadFirstDataF
