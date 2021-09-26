@@ -88,3 +88,4 @@ Page {
         target: searchModel
         onLoadFirstDataFinished: busyIndicator.visible = false
     }
+}
