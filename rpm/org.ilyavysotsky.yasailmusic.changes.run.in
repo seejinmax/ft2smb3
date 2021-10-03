@@ -4,4 +4,6 @@
 # generate changelog from well formatted Git commit messages and tag
 # annotations.
 
-git-chang
+git-change-log
+
+# Here are some basic examples how to change 
