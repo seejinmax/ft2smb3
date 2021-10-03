@@ -6,4 +6,5 @@
 
 git-change-log
 
-# Here are some basic examples how to change 
+# Here are some basic examples how to change from the default behavior. Run
+# git-change-log --he
