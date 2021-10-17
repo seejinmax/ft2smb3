@@ -13,4 +13,4 @@ git-change-log
 # Use a subset of tags
 #git-change-log --tags refs/tags/my-prefix/*
 
-# Group entrie
+# Group entries by minor revision, suppress headlines for patch-level revisions
