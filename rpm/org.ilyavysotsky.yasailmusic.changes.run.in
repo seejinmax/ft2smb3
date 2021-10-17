@@ -11,4 +11,6 @@ git-change-log
 # learn all the options git-change-log accepts.
 
 # Use a subset of tags
-#git-change-log --
+#git-change-log --tags refs/tags/my-prefix/*
+
+# Group entrie
