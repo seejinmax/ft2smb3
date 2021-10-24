@@ -14,3 +14,6 @@ git-change-log
 #git-change-log --tags refs/tags/my-prefix/*
 
 # Group entries by minor revision, suppress headlines for patch-level revisions
+#git-change-log --dense '/[0-9]+.[0-9+$'
+
+# Tri
