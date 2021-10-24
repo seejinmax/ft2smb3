@@ -16,4 +16,6 @@ git-change-log
 # Group entries by minor revision, suppress headlines for patch-level revisions
 #git-change-log --dense '/[0-9]+.[0-9+$'
 
-# Tri
+# Trim very old changes
+#git-change-log --since 2014-04-01
+#e
