@@ -18,4 +18,6 @@ git-change-log
 
 # Trim very old changes
 #git-change-log --since 2014-04-01
-#echo '[ Some changelog entries trimmed for brevity
+#echo '[ Some changelog entries trimmed for brevity ]'
+
+# Use the subjects (first lines) of 
