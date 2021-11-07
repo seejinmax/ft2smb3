@@ -20,4 +20,5 @@ git-change-log
 #git-change-log --since 2014-04-01
 #echo '[ Some changelog entries trimmed for brevity ]'
 
-# Use the subjects (first lines) of 
+# Use the subjects (first lines) of tag annotations when no entry would be
+# included for a revisi
