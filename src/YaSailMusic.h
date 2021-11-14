@@ -15,3 +15,8 @@ struct BaseValues
 {
     BaseValues();
     QList<Track*> currentPlaylist;
+};
+#define baseValues (*baseValues_)
+extern BaseValues* baseValues_;
+
+#endif // YASAILMUSIC_H
