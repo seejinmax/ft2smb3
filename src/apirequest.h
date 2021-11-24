@@ -8,4 +8,6 @@
 QT_BEGIN_NAMESPACE
 class QHttpMultiPart;
 class QNetworkAccessManager;
-class Q
+class QNetworkReply;
+class QJsonValue;
+QT_END_NAMESPAC
