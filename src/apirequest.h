@@ -5,4 +5,7 @@
 #include <QUrl>
 #include <QUrlQuery>
 
-QT_BEGIN_NAME
+QT_BEGIN_NAMESPACE
+class QHttpMultiPart;
+class QNetworkAccessManager;
+class Q
