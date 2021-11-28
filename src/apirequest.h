@@ -17,4 +17,7 @@ class ApiRequest : public QObject
     Q_OBJECT
 
 public:
-    explicit ApiRequest(QObject *parent = 0
+    explicit ApiRequest(QObject *parent = 0);
+    ~ApiRequest();
+
+    void makeApiGetRequest(co
