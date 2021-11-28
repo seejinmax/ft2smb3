@@ -10,4 +10,10 @@ class QHttpMultiPart;
 class QNetworkAccessManager;
 class QNetworkReply;
 class QJsonValue;
-QT_END_NAMESPAC
+QT_END_NAMESPACE
+
+class ApiRequest : public QObject
+{
+    Q_OBJECT
+
+public:
