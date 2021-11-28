@@ -17,3 +17,4 @@ class ApiRequest : public QObject
     Q_OBJECT
 
 public:
+    explicit ApiRequest(QObject *parent = 0
