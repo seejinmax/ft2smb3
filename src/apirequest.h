@@ -20,4 +20,5 @@ public:
     explicit ApiRequest(QObject *parent = 0);
     ~ApiRequest();
 
-    void makeApiGetRequest(co
+    void makeApiGetRequest(const QString &method, const QUrlQuery &query);
+    vo
