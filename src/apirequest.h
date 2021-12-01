@@ -21,4 +21,4 @@ public:
     ~ApiRequest();
 
     void makeApiGetRequest(const QString &method, const QUrlQuery &query);
-    vo
+    void makeApiPostRequest(const QString &method, c
