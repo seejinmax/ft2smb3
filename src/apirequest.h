@@ -24,4 +24,7 @@ public:
     void makeApiPostRequest(const QString &method, const QString &query);
 
 signals:
-    void gotResponse(
+    void gotResponse(const QJsonValue &value);
+
+public slots:
+    void
