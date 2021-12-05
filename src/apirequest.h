@@ -27,4 +27,6 @@ signals:
     void gotResponse(const QJsonValue &value);
 
 public slots:
-    void
+    void dataReady(QNetworkReply *reply);
+
+private:
