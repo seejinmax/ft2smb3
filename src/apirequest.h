@@ -30,3 +30,4 @@ public slots:
     void dataReady(QNetworkReply *reply);
 
 private:
+    const QString API_URL = "https://api.music.yand
