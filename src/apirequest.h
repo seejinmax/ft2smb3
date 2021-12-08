@@ -32,4 +32,7 @@ public slots:
 private:
     const QString API_URL = "https://api.music.yandex.net";
 
-    QNetworkAccessManager *_manag
+    QNetworkAccessManager *_manager;
+};
+
+#endif // APIREQUEST_H
