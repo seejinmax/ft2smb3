@@ -1,1 +1,3 @@
-#include <QNetworkReque
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QNetworkAc
