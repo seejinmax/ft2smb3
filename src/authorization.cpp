@@ -1,3 +1,5 @@
 #include <QNetworkRequest>
 #include <QNetworkReply>
-#include <QNetworkAc
+#include <QNetworkAccessManager>
+#include <QJsonDocument>
+#include <QJsonObject>
