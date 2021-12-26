@@ -11,4 +11,8 @@ Authorization::Authorization(QObject *parent) : QObject(parent)
 {
 }
 
-Authorization::~Authorization
+Authorization::~Authorization()
+{
+}
+
+void Authorization::setupRequest(QNe
