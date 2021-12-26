@@ -7,4 +7,8 @@
 #include "authorization.h"
 #include "settings.h"
 
-Authorization::Authorization(QObject *parent) : QObjec
+Authorization::Authorization(QObject *parent) : QObject(parent)
+{
+}
+
+Authorization::~Authorization
