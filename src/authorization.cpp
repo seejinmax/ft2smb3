@@ -15,4 +15,7 @@ Authorization::~Authorization()
 {
 }
 
-void Authorization::setupRequest(QNe
+void Authorization::setupRequest(QNetworkRequest *r)
+{
+    Settings settings;
+    Q
