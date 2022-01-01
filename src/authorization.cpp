@@ -18,4 +18,4 @@ Authorization::~Authorization()
 void Authorization::setupRequest(QNetworkRequest *r)
 {
     Settings settings;
-    Q
+    QString accessToken = settings.value("accessToken
