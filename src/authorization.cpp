@@ -21,4 +21,5 @@ void Authorization::setupRequest(QNetworkRequest *r)
     QString accessToken = settings.value("accessToken").toString();
 
     r->setRawHeader("Accept", "*/*");
-    r->setRawHeader("X-Reque
+    r->setRawHeader("X-Requested-With", "XMLHttpRequest");
+    r->setHeader(QNetworkRe
