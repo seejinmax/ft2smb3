@@ -23,4 +23,6 @@ void Authorization::setupRequest(QNetworkRequest *r)
     r->setRawHeader("Accept", "*/*");
     r->setRawHeader("X-Requested-With", "XMLHttpRequest");
     r->setHeader(QNetworkRequest::UserAgentHeader, "Yandex-Music-API");
-    r->setRawHeader("X-Yandex-Music-Client", "Yandex
+    r->setRawHeader("X-Yandex-Music-Client", "YandexMusicAndroid/23020251");
+
+    if(accessToken.size(
