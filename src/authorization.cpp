@@ -26,4 +26,8 @@ void Authorization::setupRequest(QNetworkRequest *r)
     r->setRawHeader("X-Yandex-Music-Client", "YandexMusicAndroid/23020251");
 
     if(accessToken.size() > 0) {
-        r->setRawHeader("Authorization", QString("OAuth %1").arg(accessToken).toLatin1())
+        r->setRawHeader("Authorization", QString("OAuth %1").arg(accessToken).toLatin1());
+    }
+}
+
+void Authorization::doAuth(QString
