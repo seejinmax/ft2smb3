@@ -30,4 +30,6 @@ void Authorization::setupRequest(QNetworkRequest *r)
     }
 }
 
-void Authorization::doAuth(QString
+void Authorization::doAuth(QString username, QString password)
+{
+    QUrl url(m_oauthU
