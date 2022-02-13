@@ -34,4 +34,5 @@ void Authorization::doAuth(QString username, QString password)
 {
     QUrl url(m_oauthURL);
     QUrlQuery q;
-    q.addQueryItem("grant_ty
+    q.addQueryItem("grant_type", "password");
+    q.addQueryItem("username", 
