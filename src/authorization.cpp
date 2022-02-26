@@ -38,4 +38,7 @@ void Authorization::doAuth(QString username, QString password)
     q.addQueryItem("username", username);
     q.addQueryItem("password", password);
     q.addQueryItem("client_id", m_clientID);
-    q.addQueryItem("client_secret", m_c
+    q.addQueryItem("client_secret", m_clientSecret);
+
+    QNetworkRequest r(url);
+    r.setHe
