@@ -41,4 +41,4 @@ void Authorization::doAuth(QString username, QString password)
     q.addQueryItem("client_secret", m_clientSecret);
 
     QNetworkRequest r(url);
-    r.setHe
+    r.setHeader(QNetworkRequest::ContentTypeHeader
