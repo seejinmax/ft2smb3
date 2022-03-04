@@ -44,4 +44,4 @@ void Authorization::doAuth(QString username, QString password)
     r.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
     setupRequest(&r);
 
- 
+    QNetworkAccessManager* m = new QNetworkAcce
