@@ -41,4 +41,7 @@ void Authorization::doAuth(QString username, QString password)
     q.addQueryItem("client_secret", m_clientSecret);
 
     QNetworkRequest r(url);
-    r.setHeader(QNetworkRequest::ContentTypeHeader
+    r.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
+    setupRequest(&r);
+
+ 
