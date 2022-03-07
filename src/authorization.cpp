@@ -45,4 +45,6 @@ void Authorization::doAuth(QString username, QString password)
     setupRequest(&r);
 
     QNetworkAccessManager* m = new QNetworkAccessManager;
-    QNetworkReply *reply = m->post(r, 
+    QNetworkReply *reply = m->post(r, q.toString().toLatin1());
+
+    connect
