@@ -50,4 +50,7 @@ void Authorization::doAuth(QString username, QString password)
     connect(reply, &QNetworkReply::finished, this, &Authorization::doAuthFinished);
 }
 
-bool Authorizati
+bool Authorization::checkToken()
+{
+    Settings settings;
+    QS
