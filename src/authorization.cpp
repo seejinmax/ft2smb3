@@ -53,4 +53,5 @@ void Authorization::doAuth(QString username, QString password)
 bool Authorization::checkToken()
 {
     Settings settings;
-    QS
+    QString accessToken = settings.value("accessToken").toString();
+    Q
