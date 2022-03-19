@@ -54,4 +54,4 @@ bool Authorization::checkToken()
 {
     Settings settings;
     QString accessToken = settings.value("accessToken").toString();
-    Q
+    QString userId = settings.value("userId").toString()
