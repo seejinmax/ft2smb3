@@ -57,4 +57,8 @@ bool Authorization::checkToken()
     QString userId = settings.value("userId").toString();
     QDateTime ttl = settings.value("ttl").toDateTime();
 
-    if(!accessToken.isEmpty() &&
+    if(!accessToken.isEmpty() && !userId.isEmpty()) {
+        return true;
+    }
+
+    return f
