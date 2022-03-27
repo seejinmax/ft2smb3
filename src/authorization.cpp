@@ -61,4 +61,8 @@ bool Authorization::checkToken()
         return true;
     }
 
-    return f
+    return false;
+}
+
+
+void Authorization::removeAccessToken(
