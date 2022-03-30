@@ -67,4 +67,7 @@ bool Authorization::checkToken()
 
 void Authorization::removeAccessToken() {
     Settings settings;
-    settings.remove("acc
+    settings.remove("accessToken");
+}
+
+void Authorization::removeUserId(
