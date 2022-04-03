@@ -70,4 +70,6 @@ void Authorization::removeAccessToken() {
     settings.remove("accessToken");
 }
 
-void Authorization::removeUserId(
+void Authorization::removeUserId() {
+    Settings settings;
+    settings.remove
