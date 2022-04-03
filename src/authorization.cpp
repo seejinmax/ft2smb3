@@ -72,4 +72,9 @@ void Authorization::removeAccessToken() {
 
 void Authorization::removeUserId() {
     Settings settings;
-    settings.remove
+    settings.remove("userId");
+}
+
+void Authorization::doAuthFinished()
+{
+   
