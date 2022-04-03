@@ -77,4 +77,5 @@ void Authorization::removeUserId() {
 
 void Authorization::doAuthFinished()
 {
-    QNetworkReply *reply = qobject_
+    QNetworkReply *reply = qobject_cast<QNetworkReply*>(sender());
+    reply->de
