@@ -80,4 +80,5 @@ void Authorization::doAuthFinished()
     QNetworkReply *reply = qobject_cast<QNetworkReply*>(sender());
     reply->deleteLater();
     if(reply->error() == QNetworkReply::NoError) {
-        const QByteArray info = reply-
+        const QByteArray info = reply->readAll();
+        qDebug() << Q_FUNC_INFO << info;
