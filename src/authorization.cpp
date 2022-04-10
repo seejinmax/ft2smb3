@@ -84,3 +84,5 @@ void Authorization::doAuthFinished()
         qDebug() << Q_FUNC_INFO << info;
         QJsonDocument doc = QJsonDocument::fromJson(info);
         QJsonObject jo = doc.object();
+        if(jo.contains("access_token")) {
+    
