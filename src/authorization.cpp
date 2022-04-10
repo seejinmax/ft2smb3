@@ -85,4 +85,4 @@ void Authorization::doAuthFinished()
         QJsonDocument doc = QJsonDocument::fromJson(info);
         QJsonObject jo = doc.object();
         if(jo.contains("access_token")) {
-    
+            m_userId = QString::number(jo.value("uid")
