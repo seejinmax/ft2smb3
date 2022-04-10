@@ -82,3 +82,4 @@ void Authorization::doAuthFinished()
     if(reply->error() == QNetworkReply::NoError) {
         const QByteArray info = reply->readAll();
         qDebug() << Q_FUNC_INFO << info;
+        QJsonDocument doc = QJsonDocument::fromJso
