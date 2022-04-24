@@ -86,4 +86,5 @@ void Authorization::doAuthFinished()
         QJsonObject jo = doc.object();
         if(jo.contains("access_token")) {
             m_userId = QString::number(jo.value("uid").toInt());
-            m_token = jo.value("acce
+            m_token = jo.value("access_token").toString();
+            m_ttl = QDateTime::c
