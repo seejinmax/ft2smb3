@@ -87,4 +87,7 @@ void Authorization::doAuthFinished()
         if(jo.contains("access_token")) {
             m_userId = QString::number(jo.value("uid").toInt());
             m_token = jo.value("access_token").toString();
-            m_ttl = QDateTime::currentDateTime().addSecs(jo.value("expires_in").to
+            m_ttl = QDateTime::currentDateTime().addSecs(jo.value("expires_in").toInt());
+
+            Settings settings;
+         
