@@ -91,3 +91,5 @@ void Authorization::doAuthFinished()
 
             Settings settings;
             settings.setValue("accessToken", m_token);
+            settings.setValue("userId", m_userId);
+   
