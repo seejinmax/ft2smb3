@@ -90,4 +90,4 @@ void Authorization::doAuthFinished()
             m_ttl = QDateTime::currentDateTime().addSecs(jo.value("expires_in").toInt());
 
             Settings settings;
-         
+            settings.setValue("accessToken", m_token);
