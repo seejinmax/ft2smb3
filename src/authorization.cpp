@@ -95,4 +95,5 @@ void Authorization::doAuthFinished()
             settings.setValue("ttl", m_ttl);
 
             emit authorized(m_token, m_userId);
-       
+        } else {
+            emit error("Stran
