@@ -99,4 +99,6 @@ void Authorization::doAuthFinished()
             emit error("Strange response");
         }
     } else {
-        emit error("Login 
+        emit error("Login failed");
+    }
+}
