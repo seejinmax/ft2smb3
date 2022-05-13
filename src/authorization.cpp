@@ -96,4 +96,7 @@ void Authorization::doAuthFinished()
 
             emit authorized(m_token, m_userId);
         } else {
-            emit error("Stran
+            emit error("Strange response");
+        }
+    } else {
+        emit error("Login 
