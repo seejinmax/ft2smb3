@@ -2,4 +2,6 @@
 #define AUTHORIZATION_H
 
 #include <QObject>
-#incl
+#include <QString>
+#include <QUrl>
+#include <QUrlQuery>
