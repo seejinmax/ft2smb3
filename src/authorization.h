@@ -5,3 +5,7 @@
 #include <QString>
 #include <QUrl>
 #include <QUrlQuery>
+
+#include <QDebug>
+#include <QNetworkReply>
+#include
