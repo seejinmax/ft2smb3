@@ -15,4 +15,5 @@ class Authorization : public QObject
     Q_OBJECT
 
 public:
-    explicit Author
+    explicit Authorization(QObject *parent = 0);
+    ~Authori
