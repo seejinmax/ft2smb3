@@ -10,4 +10,9 @@
 #include <QNetworkReply>
 #include <QNetworkAccessManager>
 
-class Authorizatio
+class Authorization : public QObject
+{
+    Q_OBJECT
+
+public:
+    explicit Author
