@@ -8,4 +8,6 @@
 
 #include <QDebug>
 #include <QNetworkReply>
-#include
+#include <QNetworkAccessManager>
+
+class Authorizatio
