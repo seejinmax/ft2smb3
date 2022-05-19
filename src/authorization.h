@@ -16,4 +16,7 @@ class Authorization : public QObject
 
 public:
     explicit Authorization(QObject *parent = 0);
-    ~Authori
+    ~Authorization();
+
+    static void setupRequest(QNetworkRequest *r);
+ 
