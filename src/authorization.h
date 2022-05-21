@@ -19,4 +19,4 @@ public:
     ~Authorization();
 
     static void setupRequest(QNetworkRequest *r);
- 
+    Q_INVOKABLE void doAuth(QString username, QString passwo
