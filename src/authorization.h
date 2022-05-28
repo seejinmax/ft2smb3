@@ -22,4 +22,8 @@ public:
     Q_INVOKABLE void doAuth(QString username, QString password);
     Q_INVOKABLE bool checkToken();
     Q_INVOKABLE void removeAccessToken();
-    Q_INVOKABLE
+    Q_INVOKABLE void removeUserId();
+
+public slots:
+
+p
