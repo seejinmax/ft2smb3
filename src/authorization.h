@@ -26,4 +26,5 @@ public:
 
 public slots:
 
-p
+private slots:
+    void doAuthFinished(
