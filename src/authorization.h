@@ -21,4 +21,5 @@ public:
     static void setupRequest(QNetworkRequest *r);
     Q_INVOKABLE void doAuth(QString username, QString password);
     Q_INVOKABLE bool checkToken();
-    Q_INVOKABL
+    Q_INVOKABLE void removeAccessToken();
+    Q_INVOKABLE
