@@ -27,4 +27,7 @@ public:
 public slots:
 
 private slots:
-    void doAuthFinished(
+    void doAuthFinished();
+
+signals:
+    void error(QString errorMessage)
