@@ -31,4 +31,7 @@ private slots:
 
 signals:
     void error(QString errorMessage);
-    void authorized(QString accessToken, QString us
+    void authorized(QString accessToken, QString userId);
+
+private:
+    const QString m_oauthURL = "htt
