@@ -30,4 +30,5 @@ private slots:
     void doAuthFinished();
 
 signals:
-    void error(QString errorMessage)
+    void error(QString errorMessage);
+    void authorized(QString accessToken, QString us
