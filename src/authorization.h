@@ -34,4 +34,5 @@ signals:
     void authorized(QString accessToken, QString userId);
 
 private:
-    const QString m_oauthURL = "htt
+    const QString m_oauthURL = "https://oauth.yandex.ru/token";
+    const QString m_client
