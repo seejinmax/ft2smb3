@@ -35,4 +35,5 @@ signals:
 
 private:
     const QString m_oauthURL = "https://oauth.yandex.ru/token";
-    const QString m_client
+    const QString m_clientID = "23cabbbdc6cd418abb4b39c32c41195d";
+    c
