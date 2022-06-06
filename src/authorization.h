@@ -40,4 +40,7 @@ private:
 
     QString m_token;
     QString m_userId;
-    QDateTime m
+    QDateTime m_ttl;
+};
+
+#endif // AUTHORIZATION_H
