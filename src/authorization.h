@@ -38,4 +38,6 @@ private:
     const QString m_clientID = "23cabbbdc6cd418abb4b39c32c41195d";
     const QString m_clientSecret = "53bc75238f0c4d08a118e51fe9203300";
 
-    QString 
+    QString m_token;
+    QString m_userId;
+    QDateTime m
