@@ -4,4 +4,6 @@
 #include "downloader.h"
 
 #include <QDir>
-#include <QJsonArr
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QNetworkReq
