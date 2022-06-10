@@ -1,4 +1,7 @@
 #include "cacher.h"
 #include "authorization.h"
 #include "apirequest.h"
-#include "down
+#include "downloader.h"
+
+#include <QDir>
+#include <QJsonArr
