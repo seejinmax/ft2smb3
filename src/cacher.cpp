@@ -6,4 +6,6 @@
 #include <QDir>
 #include <QJsonArray>
 #include <QJsonObject>
-#include <QNetworkReq
+#include <QNetworkRequest>
+#include <QStandardPaths>
+#include <QXmlStreamRead
