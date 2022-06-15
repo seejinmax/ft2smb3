@@ -10,4 +10,9 @@
 #include <QStandardPaths>
 #include <QXmlStreamReader>
 
-Cacher::Cacher(Track *track, QObject *parent) : QObje
+Cacher::Cacher(Track *track, QObject *parent) : QObject(parent)
+{
+    m_track = track;
+}
+
+void Cacher::saveT
