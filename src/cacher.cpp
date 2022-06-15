@@ -8,4 +8,6 @@
 #include <QJsonObject>
 #include <QNetworkRequest>
 #include <QStandardPaths>
-#include <QXmlStreamRead
+#include <QXmlStreamReader>
+
+Cacher::Cacher(Track *track, QObject *parent) : QObje
