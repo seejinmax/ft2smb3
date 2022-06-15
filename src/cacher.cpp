@@ -17,4 +17,4 @@ Cacher::Cacher(Track *track, QObject *parent) : QObject(parent)
 
 void Cacher::saveToCache()
 {
-    QString cachepath = QStandardPaths::wri
+    QString cachepath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation)+"/"+QString::num
