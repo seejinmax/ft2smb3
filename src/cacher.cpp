@@ -15,4 +15,6 @@ Cacher::Cacher(Track *track, QObject *parent) : QObject(parent)
     m_track = track;
 }
 
-void Cacher::saveT
+void Cacher::saveToCache()
+{
+    QString cachepath = QStandardPaths::wri
