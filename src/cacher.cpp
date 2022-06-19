@@ -21,4 +21,5 @@ void Cacher::saveToCache()
     m_fileToSave = cachepath+"/"+QString::number(m_track->trackId)+".mp3";
 
     QDir cacheDir(cachepath);
-    i
+    if(!cacheDir.exists()) {
+        cacheDir.mkpath(cache
