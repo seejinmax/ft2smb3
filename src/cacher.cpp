@@ -22,4 +22,7 @@ void Cacher::saveToCache()
 
     QDir cacheDir(cachepath);
     if(!cacheDir.exists()) {
-        cacheDir.mkpath(cache
+        cacheDir.mkpath(cachepath);
+    }
+
+    if(QFile::exists(m_fileToSave)) 
