@@ -18,4 +18,4 @@ Cacher::Cacher(Track *track, QObject *parent) : QObject(parent)
 void Cacher::saveToCache()
 {
     QString cachepath = QStandardPaths::writableLocation(QStandardPaths::CacheLocation)+"/"+QString::number(m_track->artistId);
-    m_fileToSav
+    m_fileToSave = cachepath+"/"+QString::number(m_track->t
