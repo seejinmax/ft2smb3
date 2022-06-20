@@ -25,4 +25,8 @@ void Cacher::saveToCache()
         cacheDir.mkpath(cachepath);
     }
 
-    if(QFile::exists(m_fileToSave)) 
+    if(QFile::exists(m_fileToSave)) {
+        return;
+    }
+
+    ApiRequest* getTrackDownloadInfoReques
