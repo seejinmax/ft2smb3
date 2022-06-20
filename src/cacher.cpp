@@ -29,4 +29,6 @@ void Cacher::saveToCache()
         return;
     }
 
-    ApiRequest* getTrackDownloadInfoReques
+    ApiRequest* getTrackDownloadInfoRequest = new ApiRequest();
+    QUrlQuery query;
+    getTrac
