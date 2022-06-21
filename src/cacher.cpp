@@ -31,4 +31,4 @@ void Cacher::saveToCache()
 
     ApiRequest* getTrackDownloadInfoRequest = new ApiRequest();
     QUrlQuery query;
-    getTrac
+    getTrackDownloadInfoRequest->makeApiGetRequest("
