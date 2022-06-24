@@ -37,4 +37,9 @@ void Cacher::saveToCache()
 
 QString Cacher::fileToSave()
 {
-    return m
+    return m_fileToSave;
+}
+
+QString Cacher::Url()
+{
+    retur
