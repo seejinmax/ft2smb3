@@ -33,3 +33,8 @@ void Cacher::saveToCache()
     QUrlQuery query;
     getTrackDownloadInfoRequest->makeApiGetRequest("/tracks/"+QString::number(m_track->trackId)+"/download-info", query);
     connect(getTrackDownloadInfoRequest, &ApiRequest::gotResponse, this, &Cacher::getDownloadInfoFinished);
+}
+
+QString Cacher::fileToSave()
+{
+    return m
