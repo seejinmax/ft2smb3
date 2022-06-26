@@ -45,4 +45,6 @@ QString Cacher::Url()
     return m_Url;
 }
 
-void Cacher::getDownloadInfoFinished
+void Cacher::getDownloadInfoFinished(const QJsonValue &value)
+{
+    QJsonArray qja =
