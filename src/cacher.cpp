@@ -42,4 +42,7 @@ QString Cacher::fileToSave()
 
 QString Cacher::Url()
 {
-    retur
+    return m_Url;
+}
+
+void Cacher::getDownloadInfoFinished
