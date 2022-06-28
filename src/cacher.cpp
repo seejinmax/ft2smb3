@@ -52,4 +52,5 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
     int bitrateInKbps = 0;
     QString downloadInfoUrl;
 
-    f
+    foreach (const QJsonValue & value, qja) {
+  
