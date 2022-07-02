@@ -53,4 +53,4 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
     QString downloadInfoUrl;
 
     foreach (const QJsonValue & value, qja) {
-        if(value.toObject()["codec"].toString() == "
+        if(value.toObject()["codec"].toString() == "mp3" && value.toObject()["bitrateInKbps"].toInt() > bi
