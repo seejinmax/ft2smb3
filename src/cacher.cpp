@@ -59,4 +59,8 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
         }
     }
 
-    if(downloadInfoUrl.isEmpty(
+    if(downloadInfoUrl.isEmpty()) {
+        return;
+    }
+
+    QNetworkAccessManager* dInfoManager 
