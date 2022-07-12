@@ -65,4 +65,5 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
 
     QNetworkAccessManager* dInfoManager = new QNetworkAccessManager(this);
     QNetworkRequest nr(downloadInfoUrl);
-    Authorization::s
+    Authorization::setupRequest(&nr);
+    QNetworkReply *repl
