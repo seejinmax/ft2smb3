@@ -74,4 +74,8 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
 void Cacher::getSongUrl()
 {
     QNetworkReply* reply = static_cast<QNetworkReply*>(sender());
-    QString DataAsString2 = reply->readA
+    QString DataAsString2 = reply->readAll();
+
+    QString host;
+    QString path;
+    QS
