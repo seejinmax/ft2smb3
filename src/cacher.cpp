@@ -73,4 +73,4 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
 
 void Cacher::getSongUrl()
 {
-    QNetwo
+    QNetworkReply* reply = static_cast<QNetwork
