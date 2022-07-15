@@ -68,4 +68,9 @@ void Cacher::getDownloadInfoFinished(const QJsonValue &value)
     Authorization::setupRequest(&nr);
     QNetworkReply *reply = dInfoManager->get(nr);
 
-    connect(reply, &QNetworkReply::finished, this, &Cacher::getSon
+    connect(reply, &QNetworkReply::finished, this, &Cacher::getSongUrl);
+}
+
+void Cacher::getSongUrl()
+{
+    QNetwo
