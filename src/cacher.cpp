@@ -78,4 +78,8 @@ void Cacher::getSongUrl()
 
     QString host;
     QString path;
-    QS
+    QString ts;
+    QString region;
+    QString s;
+
+    QXm
