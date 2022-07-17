@@ -86,4 +86,6 @@ void Cacher::getSongUrl()
     while(!reader.atEnd() && !reader.hasError()) {
         if(reader.readNext() == QXmlStreamReader::StartElement) {
             if (reader.name() == "host") {
-                host = reader.readElementTe
+                host = reader.readElementText();
+            }
+            if (reader.name() == "p
