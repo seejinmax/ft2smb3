@@ -90,4 +90,6 @@ void Cacher::getSongUrl()
             }
             if (reader.name() == "path") {
                 path =reader.readElementText();
+            }
+            if (reader.name() == "ts") {
  
