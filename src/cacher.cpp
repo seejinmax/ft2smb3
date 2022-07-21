@@ -97,4 +97,5 @@ void Cacher::getSongUrl()
             if (reader.name() == "region") {
                 region = reader.readElementText();
             }
-            if (reader.name() =
+            if (reader.name() == "s") {
+                s = reader.readElementText()
