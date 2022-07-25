@@ -98,4 +98,9 @@ void Cacher::getSongUrl()
                 region = reader.readElementText();
             }
             if (reader.name() == "s") {
-                s = reader.readElementText()
+                s = reader.readElementText();
+            }
+        }
+    }
+
+    QString  
