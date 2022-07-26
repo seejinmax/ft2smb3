@@ -103,4 +103,4 @@ void Cacher::getSongUrl()
         }
     }
 
-    QString  
+    QString  sign  = QString(QCryptographicHash::hash((("XGRlBW
