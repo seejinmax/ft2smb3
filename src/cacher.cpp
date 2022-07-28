@@ -104,4 +104,6 @@ void Cacher::getSongUrl()
     }
 
     QString  sign  = QString(QCryptographicHash::hash((("XGRlBW9FXlekgbPrRHuSiA" + path.mid(1) + s).toUtf8()),QCryptographicHash::Md5).toHex());
-    QString finalUrl = "https://"+host+"/get-mp3/"+s
+    QString finalUrl = "https://"+host+"/get-mp3/"+sign+"/"+ts+path;
+    m_Url = finalUrl;
+    Downloader *songDownloader = 
