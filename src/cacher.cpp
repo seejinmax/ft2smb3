@@ -111,4 +111,6 @@ void Cacher::getSongUrl()
     songDownloader->loadData();
 }
 
-void Cacher::saveData(
+void Cacher::saveData(QByteArray data)
+{
+    QFile fileToSave(m_fileTo
