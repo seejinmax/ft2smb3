@@ -108,4 +108,7 @@ void Cacher::getSongUrl()
     m_Url = finalUrl;
     Downloader *songDownloader = new Downloader(finalUrl);
     connect(songDownloader, &Downloader::stringReady, this, &Cacher::saveData);
-    son
+    songDownloader->loadData();
+}
+
+void Cacher::saveData(
