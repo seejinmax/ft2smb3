@@ -107,4 +107,5 @@ void Cacher::getSongUrl()
     QString finalUrl = "https://"+host+"/get-mp3/"+sign+"/"+ts+path;
     m_Url = finalUrl;
     Downloader *songDownloader = new Downloader(finalUrl);
-    connect(songD
+    connect(songDownloader, &Downloader::stringReady, this, &Cacher::saveData);
+    son
