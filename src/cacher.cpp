@@ -115,4 +115,5 @@ void Cacher::saveData(QByteArray data)
 {
     QFile fileToSave(m_fileToSave);
     fileToSave.open(QFile::ReadWrite);
- 
+    fileToSave.write(data);
+    fileToSave.clo
