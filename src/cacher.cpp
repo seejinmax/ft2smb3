@@ -113,4 +113,6 @@ void Cacher::getSongUrl()
 
 void Cacher::saveData(QByteArray data)
 {
-    QFile fileToSave(m_fileTo
+    QFile fileToSave(m_fileToSave);
+    fileToSave.open(QFile::ReadWrite);
+ 
