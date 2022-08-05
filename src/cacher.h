@@ -5,4 +5,8 @@
 #include "models/playlistmodel.h"
 #include "track.h"
 
-class Cacher : publi
+class Cacher : public QObject
+{
+    Q_OBJECT
+public:
+    explic
