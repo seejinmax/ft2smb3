@@ -9,4 +9,5 @@ class Cacher : public QObject
 {
     Q_OBJECT
 public:
-    explic
+    explicit Cacher(Track* track, QObject *parent = nullptr);
+    void saveTo
