@@ -10,4 +10,6 @@ class Cacher : public QObject
     Q_OBJECT
 public:
     explicit Cacher(Track* track, QObject *parent = nullptr);
-    void saveTo
+    void saveToCache();
+    QString fileToSave();
+    QString Url();
