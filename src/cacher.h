@@ -13,3 +13,8 @@ public:
     void saveToCache();
     QString fileToSave();
     QString Url();
+
+signals:
+
+private slots:
+    void getDownloadInfoFin
