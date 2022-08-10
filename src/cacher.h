@@ -17,4 +17,6 @@ public:
 signals:
 
 private slots:
-    void getDownloadInfoFin
+    void getDownloadInfoFinished(const QJsonValue &value);
+    void getSongUrl();
+   
