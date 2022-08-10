@@ -22,4 +22,6 @@ private slots:
     void saveData(QByteArray data);
 
 private:
+    Track* m_track;
+    QString m_fileToSave;
  
