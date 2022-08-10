@@ -19,4 +19,7 @@ signals:
 private slots:
     void getDownloadInfoFinished(const QJsonValue &value);
     void getSongUrl();
-   
+    void saveData(QByteArray data);
+
+private:
+ 
