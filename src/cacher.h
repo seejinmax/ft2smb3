@@ -24,4 +24,7 @@ private slots:
 private:
     Track* m_track;
     QString m_fileToSave;
- 
+    QString m_Url;
+};
+
+#endif // CACHER_H
