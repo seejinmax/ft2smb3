@@ -54,3 +54,12 @@ void Downloader::onDownloadProgress(qint64 bytesRead,qint64 bytesTotal)
 {
     if(bytesTotal > 0)
     {
+        float progress;
+        progress = bytesRead/bytesTotal*100;
+        emit downloadProgress(progress);
+    }
+    else
+    {
+        emit downloadProgress(100);
+    }
+}
