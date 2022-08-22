@@ -6,4 +6,6 @@
 #include <QStandardPaths>
 #include <QQmlContext>
 #include <QQuickView>
-#include
+#include <QScopedPointer>
+#include <QtGlobal>
+#in
