@@ -4,4 +4,6 @@
 
 #include <QGuiApplication>
 #include <QStandardPaths>
-#
+#include <QQmlContext>
+#include <QQuickView>
+#include
