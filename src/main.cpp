@@ -14,3 +14,5 @@
 #include <QScopedPointer>
 #include "authorization.h"
 #include "models/playlistmodel.h"
+#include "settings.h"
+#include "models/searchmodel.
