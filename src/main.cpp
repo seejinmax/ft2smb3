@@ -10,4 +10,6 @@
 #include <QtGlobal>
 #include <sailfishapp.h>
 #include <stdio.h>
-#inclu
+#include <stdlib.h>
+#include <QScopedPointer>
+#include "authoriz
