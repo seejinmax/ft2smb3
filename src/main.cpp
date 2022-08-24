@@ -8,4 +8,6 @@
 #include <QQuickView>
 #include <QScopedPointer>
 #include <QtGlobal>
-#in
+#include <sailfishapp.h>
+#include <stdio.h>
+#inclu
