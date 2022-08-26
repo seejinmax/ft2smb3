@@ -19,4 +19,6 @@
 #include "track.h"
 #include "YaSailMusic.h"
 
-Ba
+BaseValues* baseValues_;
+
+BaseValues::BaseValue
