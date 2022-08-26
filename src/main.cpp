@@ -28,4 +28,4 @@ BaseValues::BaseValues()
 
 int main(int argc, char *argv[])
 {
- 
+    // SailfishApp::main() will display "qml/YandexM
