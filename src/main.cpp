@@ -15,4 +15,8 @@
 #include "authorization.h"
 #include "models/playlistmodel.h"
 #include "settings.h"
-#include "models/searchmodel.
+#include "models/searchmodel.h"
+#include "track.h"
+#include "YaSailMusic.h"
+
+Ba
