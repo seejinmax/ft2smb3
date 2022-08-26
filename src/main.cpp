@@ -21,4 +21,11 @@
 
 BaseValues* baseValues_;
 
-BaseValues::BaseValue
+BaseValues::BaseValues()
+{
+
+}
+
+int main(int argc, char *argv[])
+{
+ 
