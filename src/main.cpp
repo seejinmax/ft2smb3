@@ -31,4 +31,4 @@ int main(int argc, char *argv[])
     // SailfishApp::main() will display "qml/YandexMusic.qml", if you need more
     // control over initialization, you can use:
     //
-    //   
+    //   - SailfishApp::application(int, char *[]) t
