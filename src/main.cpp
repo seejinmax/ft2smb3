@@ -32,4 +32,5 @@ int main(int argc, char *argv[])
     // control over initialization, you can use:
     //
     //   - SailfishApp::application(int, char *[]) to get the QGuiApplication *
-    //   - SailfishApp::cr
+    //   - SailfishApp::createView() to get a new QQuickView * instance
+    //
