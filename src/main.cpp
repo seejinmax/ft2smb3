@@ -33,4 +33,4 @@ int main(int argc, char *argv[])
     //
     //   - SailfishApp::application(int, char *[]) to get the QGuiApplication *
     //   - SailfishApp::createView() to get a new QQuickView * instance
-    //
+    //   - SailfishApp::pathTo(QString) to get a QUrl to 
