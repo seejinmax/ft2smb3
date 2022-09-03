@@ -38,4 +38,4 @@ int main(int argc, char *argv[])
     //
     // To display the view, call "show()" (will show fullscreen on device).
 
-    QScopedPointer<QGu
+    QScopedPointer<QGuiApplication> application(SailfishApp::
