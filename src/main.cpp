@@ -39,4 +39,5 @@ int main(int argc, char *argv[])
     // To display the view, call "show()" (will show fullscreen on device).
 
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
-    application->setOrganizatio
+    application->setOrganizationName(QStringLiteral("org.ilyavysotsky"));
+    applicatio
