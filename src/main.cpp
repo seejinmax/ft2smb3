@@ -40,4 +40,6 @@ int main(int argc, char *argv[])
 
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setOrganizationName(QStringLiteral("org.ilyavysotsky"));
-    application->setApplicationName(QStringLiteral("yas
+    application->setApplicationName(QStringLiteral("yasailmusic"));
+
+    QScopedPointer<QQuickView> view(Sailfi
