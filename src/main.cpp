@@ -43,4 +43,7 @@ int main(int argc, char *argv[])
     application->setApplicationName(QStringLiteral("yasailmusic"));
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
-    Settings setting
+    Settings settings;
+
+    baseValues_ = new BaseValues();
+    qmlRegiste
