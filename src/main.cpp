@@ -42,4 +42,5 @@ int main(int argc, char *argv[])
     application->setOrganizationName(QStringLiteral("org.ilyavysotsky"));
     application->setApplicationName(QStringLiteral("yasailmusic"));
 
-    QScopedPointer<QQuickView> view(Sailfi
+    QScopedPointer<QQuickView> view(SailfishApp::createView());
+    Settings setting
