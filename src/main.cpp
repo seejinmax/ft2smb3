@@ -46,4 +46,4 @@ int main(int argc, char *argv[])
     Settings settings;
 
     baseValues_ = new BaseValues();
-    qmlRegiste
+    qmlRegisterType<PlaylistModel>("org.ilyavysotsky.yasailmusic",1,0
