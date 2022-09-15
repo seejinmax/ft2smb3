@@ -48,4 +48,4 @@ int main(int argc, char *argv[])
     baseValues_ = new BaseValues();
     qmlRegisterType<PlaylistModel>("org.ilyavysotsky.yasailmusic",1,0,"PlaylistModel");
     qmlRegisterType<SearchModel>("org.ilyavysotsky.yasailmusic",1,0,"SearchModel");
-    qmlRe
+    qmlRegisterType<Track>("org.ilyavysotsky.yasailmusic
