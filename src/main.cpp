@@ -50,4 +50,5 @@ int main(int argc, char *argv[])
     qmlRegisterType<SearchModel>("org.ilyavysotsky.yasailmusic",1,0,"SearchModel");
     qmlRegisterType<Track>("org.ilyavysotsky.yasailmusic",1,0,"Track");
 
-    Authorization* auth = new Authorization
+    Authorization* auth = new Authorization();
+    view->rootContext()->setContextProp
