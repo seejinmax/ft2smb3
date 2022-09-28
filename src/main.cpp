@@ -52,4 +52,5 @@ int main(int argc, char *argv[])
 
     Authorization* auth = new Authorization();
     view->rootContext()->setContextProperty("application", application.data());
-    view->rootCont
+    view->rootContext()->setContextProperty("auth", auth);
+    v
