@@ -53,4 +53,7 @@ int main(int argc, char *argv[])
     Authorization* auth = new Authorization();
     view->rootContext()->setContextProperty("application", application.data());
     view->rootContext()->setContextProperty("auth", auth);
-    view->setSource(SailfishApp::pathTo("qml/YaSai
+    view->setSource(SailfishApp::pathTo("qml/YaSailMusic.qml"));
+    view->show();
+
+    return a
