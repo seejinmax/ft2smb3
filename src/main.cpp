@@ -51,4 +51,5 @@ int main(int argc, char *argv[])
     qmlRegisterType<Track>("org.ilyavysotsky.yasailmusic",1,0,"Track");
 
     Authorization* auth = new Authorization();
-    view->rootContext()->setContextProp
+    view->rootContext()->setContextProperty("application", application.data());
+    view->rootCont
