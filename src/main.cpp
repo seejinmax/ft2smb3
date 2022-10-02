@@ -56,4 +56,5 @@ int main(int argc, char *argv[])
     view->setSource(SailfishApp::pathTo("qml/YaSailMusic.qml"));
     view->show();
 
-    return a
+    return application->exec();
+}
