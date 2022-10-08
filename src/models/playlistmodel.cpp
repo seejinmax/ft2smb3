@@ -161,3 +161,42 @@ void PlaylistModel::setCurrentIndex(int currentIndex)
     if(currentIndex >= 0 && currentIndex < m_playList.size() && currentIndex != m_currentIndex)
     {
         m_currentIndex = currentIndex;
+        m_currentSong = m_playList.at(currentIndex)->trackName;
+        m_currentArtist = m_playList.at(currentIndex)->artistName;
+        emit currentIndexChanged(currentIndex);
+
+        if(m_currentIndex == m_playList.size()-1) {
+            qDebug() << "Load new tracks!";
+            loadMyWave();
+        }
+    }
+}
+
+QVariant PlaylistModel::get(int idx)
+{
+    if(idx >= m_playList.size())
+    {
+        return QVariant();
+    }
+
+    QMap<QString, QVariant> itemData;
+
+    Track* item = m_playList.at(idx);
+
+
+    itemData.insert("trackId",item->trackId);
+    itemData.insert("artistId",item->artistId);
+    itemData.insert("artistName",item->artistName);
+    itemData.insert("artistCover",item->artistCover);
+    itemData.insert("albumCoverId",item->albumCoverId);
+    itemData.insert("albumName",item->albumName);
+    itemData.insert("albumCover", item->albumCover);
+    itemData.insert("trackName", item->trackName);
+    itemData.insert("type", item->type);
+    itemData.insert("duration", item->duration);
+    itemData.insert("storageDir",item->storageDir);
+    itemData.insert("liked",item->liked);
+    QFile fileToSave(item->fileUrl);
+    if (QFile::exists(item->fileUrl) && fileToSave.size()>1000000) {
+        qDebug() << "fileurl";
+        itemData.insert("fileUrl", "file://"+ item->fileUrl);
