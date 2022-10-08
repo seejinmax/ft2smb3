@@ -200,3 +200,48 @@ QVariant PlaylistModel::get(int idx)
     if (QFile::exists(item->fileUrl) && fileToSave.size()>1000000) {
         qDebug() << "fileurl";
         itemData.insert("fileUrl", "file://"+ item->fileUrl);
+    } else {
+        qDebug() << "fullurl";
+        itemData.insert("fileUrl", item->url);
+    }
+    return QVariant(itemData);
+}
+
+void PlaylistModel::playTrack()
+{
+    //https://api.music.yandex.net/play-audio?total-played-seconds=0.1&track-length-seconds=281.983&client-now=2022-04-24T06:05:30.742Z&album-id=5939666&end-position-seconds=0.1&from-cache=false&timestamp=2022-04-24T06:05:30.735Z&track-id=44317484&uid=253482261&from=radio-mobile-user-onyourwave-default&play-id=B0A28CEF-61ED-4373-B3A8-B46B545C6096&restored=true
+
+    QUrlQuery query;
+    Settings settings;
+    QDateTime current = QDateTime::currentDateTime();
+    QString curdt = current.toString("yyyy-MM-ddThh:mm:ss.zzzZ");
+    QString userId = settings.value("userId").toString();
+    query.addQueryItem("uid", userId);
+    query.addQueryItem("client-now", curdt);
+    query.addQueryItem("from-cache", "false");
+    query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->albumCoverId));
+    query.addQueryItem("track-length-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    query.addQueryItem("end-position-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    query.addQueryItem("from", "mobile-home-rup_main-user-onyourwave-default");
+    query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->trackId));
+    query.addQueryItem("play-id", "79CFB84C-4A0B-4B31-8954-3006C0BD9274");
+    query.addQueryItem("timestamp", curdt);
+    query.addQueryItem("total-played-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    qDebug() << query.toString();
+    m_api->makeApiPostRequest("/play-audio?"+query.toString(), QString(""));
+
+}
+
+
+void PlaylistModel::sendFeedback(QString type)
+{
+    //https://api.music.yandex.net/rotor/station/user:onyourwave/feedback?batch-id=1650794627602847-12773357239773228567.svBt
+    //{"type":"trackStarted","totalPlayedSeconds":0,"timestamp":"2022-04-24T06:05:47.021Z","trackId":"4148044:468625"}
+    //QUrlQuery query;
+
+    QDateTime current = QDateTime::currentDateTime();
+    QString curdt = current.toString("yyyy-MM-ddThh:mm:ss.zzzZ");
+    /* query.addQueryItem("type", type);
+    if (type.contains("trackStarted")) {
+        query.addQueryItem("totalPlayedSeconds", "0");
+    } else {
