@@ -111,3 +111,53 @@ QVariant PlaylistModel::data(const QModelIndex &index, int role) const {
     } else if (role == Qt::UserRole+9) {
         return item->duration;
     } else if (role == Qt::UserRole+10) {
+        return item->storageDir;
+    } else if (role == Qt::UserRole+11) {
+        return item->liked;
+    } else if (role == Qt::UserRole+12) {
+        return item->fileUrl;
+    }
+    return QVariant();
+}
+
+bool PlaylistModel::insertRows(int position, int rows, Track *item, const QModelIndex &index)
+{
+    Q_UNUSED(index);
+    if (!(m_playList.contains(item)))
+    {
+        beginInsertRows(QModelIndex(), position, position+rows-1);
+        for (int row = 0; row < rows; ++row) {
+            if (!(m_playList.contains(item)))
+            {
+                m_playList.insert(position, item);
+            }
+        }
+        endInsertRows();
+    }
+    return true;
+}
+
+bool PlaylistModel::removeRows(int position, int rows, const QModelIndex &index)
+{
+    Q_UNUSED(index);
+    if((position+rows) > m_playList.size())
+    {
+        return false;
+    }
+
+    beginRemoveRows(QModelIndex(), position, position+rows-1);
+    for (int row = 0; row < rows; ++row) {
+        m_playList.removeAt(position);
+    }
+    endRemoveRows();
+    return true;
+}
+
+
+
+void PlaylistModel::setCurrentIndex(int currentIndex)
+{
+
+    if(currentIndex >= 0 && currentIndex < m_playList.size() && currentIndex != m_currentIndex)
+    {
+        m_currentIndex = currentIndex;
