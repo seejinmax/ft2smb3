@@ -245,3 +245,50 @@ void PlaylistModel::sendFeedback(QString type)
     if (type.contains("trackStarted")) {
         query.addQueryItem("totalPlayedSeconds", "0");
     } else {
+        query.addQueryItem("totalPlayedSeconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    }
+    query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId));
+    query.addQueryItem("timestamp", curdt);*/
+    QJsonObject o1;
+    if (type.contains("trackStarted")) {
+        o1 =
+        {
+            { "type", type},
+            { "timestamp", curdt },
+            { "totalPlayedSeconds", 0 },
+            { "trackId", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId) }
+        };
+    } else {
+        o1 =
+        {
+            { "type", type },
+            { "timestamp", curdt },
+            { "totalPlayedSeconds", QString::number(m_playList.at(m_currentIndex)->duration) },
+            { "trackId", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId) }
+        };
+    }
+    QString strFromObj = QJsonDocument(o1).toJson(QJsonDocument::Compact).toStdString().c_str();
+    qDebug() << "JSON: " << strFromObj;
+    m_api->makeApiPostRequest("/rotor/station/user:onyourwave/feedback?batch-id="+batchid, strFromObj);
+
+}
+
+void PlaylistModel::loadMyWave()
+{
+    if(m_loading) {
+        return;
+    }
+    m_loading = true;
+
+    QUrlQuery query;
+    query.addQueryItem("settings2", "true");
+    if(m_playList.size() > 0) {
+        query.addQueryItem("queue", QString::number(m_playList.at(m_playList.size()-1)->trackId));
+    }
+    m_api->makeApiGetRequest("/rotor/station/user:onyourwave/tracks", query);
+    connect(m_api, &ApiRequest::gotResponse, this, &PlaylistModel::getWaveFinished);
+
+}
+
+void PlaylistModel::getWaveFinished(const QJsonValue &value)
+{
