@@ -292,3 +292,53 @@ void PlaylistModel::loadMyWave()
 
 void PlaylistModel::getWaveFinished(const QJsonValue &value)
 {
+    if(value == m_oldValue) {
+        /*Sometimes Yandex return data twice*/
+        return;
+    } else {
+        m_oldValue = value;
+    }
+
+    QJsonObject qjo = value.toObject();
+    QJsonArray tracks = qjo["sequence"].toArray();
+    batchid = qjo["batchId"].toString();
+    //beginInsertRows(QModelIndex(), m_playList.count(), m_playList.count()+tracks.count()-1);
+
+    foreach (const QJsonValue & value, tracks) {
+        QJsonObject trackObject = value.toObject();
+        Track* newTrack = new Track;
+        newTrack->trackId = trackObject["track"].toObject()["id"].toString().toInt();
+        newTrack->artistId = trackObject["track"].toObject()["artists"].toArray().at(0).toObject()["id"].toInt();
+        newTrack->artistName = trackObject["track"].toObject()["artists"].toArray().at(0).toObject()["name"].toString();
+        newTrack->artistCover = trackObject["track"].toObject()["artists"].toArray().at(0).toObject()["cover"].toObject()["uri"].toString();
+        newTrack->albumCoverId = trackObject["track"].toObject()["albums"].toArray().at(0).toObject()["id"].toInt();
+        qDebug() << "albumId: " << QString::number(newTrack->albumCoverId);
+        newTrack->albumName = trackObject["track"].toObject()["albums"].toArray().at(0).toObject()["title"].toString();
+        newTrack->albumCover = trackObject["track"].toObject()["albums"].toArray().at(0).toObject()["coverUri"].toString();
+        newTrack->trackName = trackObject["track"].toObject()["title"].toString();
+        newTrack->type = trackObject["track"].toObject()["type"].toString();
+        newTrack->duration = trackObject["track"].toObject()["durationMs"].toString().toInt();
+        newTrack->storageDir = trackObject["track"].toObject()["storageDir"].toString();
+        newTrack->liked = trackObject["liked"].toBool();
+
+        if(m_playList.size() == 0) {
+            emit loadFirstDataFinished();
+        }
+
+
+
+        if(!newTrack->albumName.isEmpty() && (!(m_playList.contains(newTrack))) && !newTrack->trackName.isEmpty() && (!(m_oldValue.toString().contains(trackObject["track"].toObject()["id"].toString())))) {
+            beginInsertRows(QModelIndex(), m_playList.size(), m_playList.size());
+            Cacher* cacher = new Cacher(newTrack);
+            cacher->saveToCache();
+            newTrack->fileUrl = cacher->fileToSave();
+            newTrack->url = cacher->Url();
+            m_playList.push_back(newTrack);
+            endInsertRows();
+        }
+    }
+
+    //endInsertRows();
+    m_loading = false;
+     baseValues_->currentPlaylist=m_playList;
+}
