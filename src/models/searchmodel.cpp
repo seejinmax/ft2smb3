@@ -41,3 +41,56 @@ SearchModel::SearchModel(QObject *parent)
     m_hash.insert(Qt::UserRole+11 ,QByteArray("liked"));
     m_hash.insert(Qt::UserRole+12 ,QByteArray("fileUrl"));
     //SearchModel::model = this;
+    m_api = new ApiRequest();
+}
+
+
+int SearchModel::rowCount(const QModelIndex &parent) const {
+    Q_UNUSED(parent)
+    return m_playList.size();
+}
+
+inline void delayy(int millisecondsWait)
+{
+    QEventLoop loop;
+    QTimer t;
+    t.connect(&t, &QTimer::timeout, &loop, &QEventLoop::quit);
+    t.start(millisecondsWait);
+    loop.exec();
+}
+
+
+
+QVariant SearchModel::data(const QModelIndex &index, int role) const {
+    Q_UNUSED(role);
+    if (!index.isValid())
+        return QVariant();
+
+    if (index.row() >= m_playList.size())
+        return QVariant();
+
+    Track* item = m_playList.at(index.row());
+    if(role == Qt::UserRole) {
+        return item->trackId;
+    } else if(role == Qt::UserRole+1) {
+        return item->artistId;
+    } else if(role == Qt::UserRole+2) {
+        return item->artistName;
+    } else if(role == Qt::UserRole+3) {
+        return item->artistCover;
+    } else if(role == Qt::UserRole+4) {
+        return item->albumCoverId;
+    } else if(role == Qt::UserRole+5) {
+        return item->albumName;
+    } else if (role == Qt::UserRole+6) {
+        return item->albumCover;
+    } else if (role == Qt::UserRole+7) {
+        return item->trackName;
+    } else if (role == Qt::UserRole+8) {
+        return item->type;
+    } else if (role == Qt::UserRole+9) {
+        return item->duration;
+    } else if (role == Qt::UserRole+10) {
+        return item->storageDir;
+    } else if (role == Qt::UserRole+11) {
+        return item->liked;
