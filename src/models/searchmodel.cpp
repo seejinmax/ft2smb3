@@ -94,3 +94,62 @@ QVariant SearchModel::data(const QModelIndex &index, int role) const {
         return item->storageDir;
     } else if (role == Qt::UserRole+11) {
         return item->liked;
+    } else if (role == Qt::UserRole+12) {
+        return item->fileUrl;
+    }
+    return QVariant();
+}
+
+bool SearchModel::insertRows(int position, int rows, Track *item, const QModelIndex &index)
+{
+    Q_UNUSED(index);
+    if (!(m_playList.contains(item)))
+    {
+        beginInsertRows(QModelIndex(), position, position+rows-1);
+        for (int row = 0; row < rows; ++row) {
+            if (!(m_playList.contains(item)))
+            {
+                m_playList.insert(position, item);
+            }
+        }
+        endInsertRows();
+    }
+    return true;
+}
+
+bool SearchModel::removeRows(int position, int rows, const QModelIndex &index)
+{
+    Q_UNUSED(index);
+    if((position+rows) > m_playList.size())
+    {
+        return false;
+    }
+
+    beginRemoveRows(QModelIndex(), position, position+rows-1);
+    for (int row = 0; row < rows; ++row) {
+        m_playList.removeAt(position);
+    }
+    endRemoveRows();
+    return true;
+}
+
+
+
+void SearchModel::setCurrentIndex(int currentIndex)
+{
+
+    if(currentIndex >= 0 && currentIndex < m_playList.size() && currentIndex != m_currentIndex)
+    {
+        m_currentIndex = currentIndex;
+        m_currentSong = m_playList.at(currentIndex)->trackName;
+        m_currentArtist = m_playList.at(currentIndex)->artistName;
+        emit currentIndexChanged(currentIndex);
+
+        /*if(m_currentIndex == m_playList.size()-1) {
+            qDebug() << "Load new tracks!";
+            searchTracks();
+        }*/
+    }
+}
+
+QVariant SearchModel::get(int idx)
