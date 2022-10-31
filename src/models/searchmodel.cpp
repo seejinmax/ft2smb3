@@ -153,3 +153,54 @@ void SearchModel::setCurrentIndex(int currentIndex)
 }
 
 QVariant SearchModel::get(int idx)
+{
+    if(idx >= m_playList.size())
+    {
+        return QVariant();
+    }
+
+    QMap<QString, QVariant> itemData;
+
+    Track* item = m_playList.at(idx);
+
+
+    itemData.insert("trackId",item->trackId);
+    itemData.insert("artistId",item->artistId);
+    itemData.insert("artistName",item->artistName);
+    itemData.insert("artistCover",item->artistCover);
+    itemData.insert("albumCoverId",item->albumCoverId);
+    itemData.insert("albumName",item->albumName);
+    itemData.insert("albumCover", item->albumCover);
+    itemData.insert("trackName", item->trackName);
+    itemData.insert("type", item->type);
+    itemData.insert("duration", item->duration);
+    itemData.insert("storageDir",item->storageDir);
+    itemData.insert("liked",item->liked);
+    QFile fileToSave(item->fileUrl);
+    if (QFile::exists(item->fileUrl) && fileToSave.size()>1000000) {
+        qDebug() << "fileurl";
+        itemData.insert("fileUrl", "file://"+ item->fileUrl);
+    } else {
+        qDebug() << "fullurl";
+        itemData.insert("fileUrl", item->url);
+    }
+    return QVariant(itemData);
+}
+
+void SearchModel::playTrack()
+{
+    //https://api.music.yandex.net/play-audio?total-played-seconds=0.1&track-length-seconds=281.983&client-now=2022-04-24T06:05:30.742Z&album-id=5939666&end-position-seconds=0.1&from-cache=false&timestamp=2022-04-24T06:05:30.735Z&track-id=44317484&uid=253482261&from=radio-mobile-user-onyourwave-default&play-id=B0A28CEF-61ED-4373-B3A8-B46B545C6096&restored=true
+
+    QUrlQuery query;
+    QSettings settings;
+    QDateTime current = QDateTime::currentDateTime();
+    QString curdt = current.toString("yyyy-MM-ddThh:mm:ss.zzzZ");
+    QString userId = settings.value("userId").toString();
+    query.addQueryItem("uid", userId);
+    query.addQueryItem("client-now", curdt);
+    query.addQueryItem("from-cache", "false");
+    query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->albumCoverId));
+    query.addQueryItem("track-length-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    query.addQueryItem("end-position-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    query.addQueryItem("from", "mobile-home-rup_main-user-onyourwave-default");
+    query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->trackId));
