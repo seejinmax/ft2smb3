@@ -204,3 +204,44 @@ void SearchModel::playTrack()
     query.addQueryItem("end-position-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
     query.addQueryItem("from", "mobile-home-rup_main-user-onyourwave-default");
     query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->trackId));
+    query.addQueryItem("play-id", "79CFB84C-4A0B-4B31-8954-3006C0BD9274");
+    query.addQueryItem("timestamp", curdt);
+    query.addQueryItem("total-played-seconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    qDebug() << query.toString();
+    m_api->makeApiPostRequest("/play-audio?"+query.toString(), QString(""));
+
+}
+
+
+void SearchModel::sendFeedback(QString type)
+{
+    //https://api.music.yandex.net/rotor/station/user:onyourwave/feedback?batch-id=1650794627602847-12773357239773228567.svBt
+    //{"type":"trackStarted","totalPlayedSeconds":0,"timestamp":"2022-04-24T06:05:47.021Z","trackId":"4148044:468625"}
+    //QUrlQuery query;
+
+    QDateTime current = QDateTime::currentDateTime();
+    QString curdt = current.toString("yyyy-MM-ddThh:mm:ss.zzzZ");
+    /* query.addQueryItem("type", type);
+    if (type.contains("trackStarted")) {
+        query.addQueryItem("totalPlayedSeconds", "0");
+    } else {
+        query.addQueryItem("totalPlayedSeconds", QString::number(m_playList.at(m_currentIndex)->duration));
+    }
+    query.addQueryItem("track-id", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId));
+    query.addQueryItem("timestamp", curdt);*/
+    QJsonObject o1;
+    if (type.contains("trackStarted")) {
+        o1 =
+        {
+            { "type", type},
+            { "timestamp", curdt },
+            { "totalPlayedSeconds", 0 },
+            { "trackId", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId) }
+        };
+    } else {
+        o1 =
+        {
+            { "type", type },
+            { "timestamp", curdt },
+            { "totalPlayedSeconds", QString::number(m_playList.at(m_currentIndex)->duration) },
+            { "trackId", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId) }
