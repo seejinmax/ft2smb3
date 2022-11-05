@@ -245,3 +245,52 @@ void SearchModel::sendFeedback(QString type)
             { "timestamp", curdt },
             { "totalPlayedSeconds", QString::number(m_playList.at(m_currentIndex)->duration) },
             { "trackId", QString::number(m_playList.at(m_currentIndex)->trackId)+":"+QString::number(m_playList.at(m_currentIndex)->albumCoverId) }
+        };
+    }
+    QString strFromObj = QJsonDocument(o1).toJson(QJsonDocument::Compact).toStdString().c_str();
+    qDebug() << "JSON: " << strFromObj;
+    m_api->makeApiPostRequest("/rotor/station/user:onyourwave/feedback?batch-id="+batchid, strFromObj);
+
+}
+
+void SearchModel::searchTracks(QString q)
+{
+    if(m_loading) {
+        return;
+    }
+    m_loading = true;
+
+    beginRemoveRows(QModelIndex(), 0, m_playList.size()-1);
+
+    m_playList.clear();
+
+    endRemoveRows();
+
+
+
+
+    QUrlQuery query;
+
+    query.addQueryItem("inputType", "0");
+    query.addQueryItem("page", "0");
+    query.addQueryItem("text", q);
+    query.addQueryItem("from", "suggest");
+    query.addQueryItem("type", "track");
+    query.addQueryItem("nocorrect", "false");
+
+    m_api->makeApiGetRequest("/search", query);
+    connect(m_api, &ApiRequest::gotResponse, this, &SearchModel::getSearchTracksFinished);
+
+}
+
+QList<Track*> SearchModel::playlist() {
+
+    return m_playList;
+}
+
+void SearchModel::getSearchTracksFinished(const QJsonValue &value)
+{
+    if(value == m_oldValue) {
+        /*Sometimes Yandex return data twice*/
+        return;
+    } else {
