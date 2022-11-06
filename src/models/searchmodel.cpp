@@ -294,3 +294,50 @@ void SearchModel::getSearchTracksFinished(const QJsonValue &value)
         /*Sometimes Yandex return data twice*/
         return;
     } else {
+        m_oldValue = value;
+    }
+
+    QJsonObject qjo = value.toObject();
+    QJsonObject tracks = qjo["tracks"].toObject();
+    QJsonArray results = tracks["results"].toArray();
+
+    //beginInsertRows(QModelIndex(), m_playList.count(), m_playList.count()+tracks.count()-1);
+
+    foreach (const QJsonValue & value, results) {
+        QJsonObject trackObject = value.toObject();
+        Track* newTrack = new Track;
+        newTrack->trackId = trackObject["id"].toInt();
+        newTrack->artistId = trackObject["artists"].toArray().at(0).toObject()["id"].toInt();
+        newTrack->artistName = trackObject["artists"].toArray().at(0).toObject()["name"].toString();
+        newTrack->artistCover = trackObject["artists"].toArray().at(0).toObject()["cover"].toObject()["uri"].toString();
+        newTrack->albumCoverId = trackObject["albums"].toArray().at(0).toObject()["id"].toInt();
+        qDebug() << "albumId: " << QString::number(newTrack->albumCoverId);
+        newTrack->albumName = trackObject["albums"].toArray().at(0).toObject()["title"].toString();
+        newTrack->albumCover = trackObject["albums"].toArray().at(0).toObject()["coverUri"].toString();
+        newTrack->trackName = trackObject["title"].toString();
+        newTrack->type = trackObject["type"].toString();
+        newTrack->duration = trackObject["durationMs"].toInt();
+        newTrack->storageDir  = "";
+        //newTrack->storageDir = trackObject["storageDir"].toString();
+        newTrack->liked = false;
+        //newTrack->liked = trackObject["liked"].toBool();
+
+        if(m_playList.size() == 0) {
+            emit loadFirstDataFinished();
+        }
+
+
+
+        // if(!newTrack->albumName.isEmpty() && (!(m_playList.contains(newTrack))) && !newTrack->trackName.isEmpty() && (!(m_oldValue.toString().contains(trackObject["track"].toObject()["id"].toString())))) {
+        beginInsertRows(QModelIndex(), m_playList.size(), m_playList.size());
+        Cacher* cacher = new Cacher(newTrack);
+        cacher->saveToCache();
+        newTrack->fileUrl = cacher->fileToSave();
+        newTrack->url = cacher->Url();
+        m_playList.push_back(newTrack);
+        endInsertRows();
+        // }
+    }
+
+    //endInsertRows();
+    m_loading = false;
