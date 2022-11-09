@@ -341,3 +341,5 @@ void SearchModel::getSearchTracksFinished(const QJsonValue &value)
 
     //endInsertRows();
     m_loading = false;
+     baseValues_->currentPlaylist=m_playList;
+}
