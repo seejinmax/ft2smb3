@@ -2,4 +2,6 @@
 #define SearchModel_H
 
 #include <QAbstractListModel>
-#include <QJsonVa
+#include <QJsonValue>
+#include <QObject>
+#include "playlistmodel.h"
