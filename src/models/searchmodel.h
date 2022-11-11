@@ -1,2 +1,5 @@
 #ifndef SearchModel_H
-#define Search
+#define SearchModel_H
+
+#include <QAbstractListModel>
+#include <QJsonVa
