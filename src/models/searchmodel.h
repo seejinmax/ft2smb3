@@ -5,3 +5,6 @@
 #include <QJsonValue>
 #include <QObject>
 #include "playlistmodel.h"
+
+#include "../apirequest.h"
+#include "../trac
