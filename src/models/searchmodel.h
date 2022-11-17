@@ -7,4 +7,6 @@
 #include "playlistmodel.h"
 
 #include "../apirequest.h"
-#include "../trac
+#include "../track.h"
+
+class SearchModel : public QAbstractL
