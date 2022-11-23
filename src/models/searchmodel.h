@@ -12,4 +12,4 @@
 class SearchModel : public QAbstractListModel
 {
     Q_OBJECT
-    Q_PROPERTY(int curren
+    Q_PROPERTY(int currentIndex READ currentIndex WRITE setCurre
