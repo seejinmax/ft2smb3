@@ -15,4 +15,6 @@ class SearchModel : public QAbstractListModel
     Q_PROPERTY(int currentIndex READ currentIndex WRITE setCurrentIndex NOTIFY currentIndexChanged)
 
 public:
-    /*st
+    /*struct Track{
+        int trackId;
+        int artistId;
