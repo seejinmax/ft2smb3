@@ -9,4 +9,7 @@
 #include "../apirequest.h"
 #include "../track.h"
 
-class SearchModel : public QAbstractL
+class SearchModel : public QAbstractListModel
+{
+    Q_OBJECT
+    Q_PROPERTY(int curren
