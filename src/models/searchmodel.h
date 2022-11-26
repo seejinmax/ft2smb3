@@ -20,4 +20,6 @@ public:
         int artistId;
         QString artistName;
         QString artistCover;
-        int albumCo
+        int albumCoverId;
+        QString albumName;
+        QString
