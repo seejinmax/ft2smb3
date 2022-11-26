@@ -22,4 +22,6 @@ public:
         QString artistCover;
         int albumCoverId;
         QString albumName;
-        QString
+        QString albumCover;
+        QString trackName;
+        Q
