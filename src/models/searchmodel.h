@@ -18,3 +18,5 @@ public:
     /*struct Track{
         int trackId;
         int artistId;
+        QString artistName;
+     
