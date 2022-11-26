@@ -19,4 +19,5 @@ public:
         int trackId;
         int artistId;
         QString artistName;
-     
+        QString artistCover;
+        int albumCo
