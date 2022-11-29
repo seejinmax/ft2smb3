@@ -24,4 +24,6 @@ public:
         QString albumName;
         QString albumCover;
         QString trackName;
-        Q
+        QString type;
+        int duration;
+        QString storag
