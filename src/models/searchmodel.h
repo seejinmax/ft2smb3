@@ -26,4 +26,7 @@ public:
         QString trackName;
         QString type;
         int duration;
-        QString storag
+        QString storageDir;
+        bool liked;
+        QString fileUrl;
+    
