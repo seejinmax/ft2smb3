@@ -29,4 +29,7 @@ public:
         QString storageDir;
         bool liked;
         QString fileUrl;
-    
+        QString url;
+    };*/
+
+    explicit Sear
