@@ -37,4 +37,4 @@ public:
 
   //   static SearchModel *model;
 
-   
+    int rowCount(const QModelIndex &parent = QM
