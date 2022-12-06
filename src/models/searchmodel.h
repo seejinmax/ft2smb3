@@ -33,4 +33,8 @@ public:
     };*/
 
     explicit SearchModel(QObject *parent = 0);
-    virtual ~
+    virtual ~SearchModel() {};
+
+  //   static SearchModel *model;
+
+   
