@@ -37,4 +37,5 @@ public:
 
   //   static SearchModel *model;
 
-    int rowCount(const QModelIndex &parent = QM
+    int rowCount(const QModelIndex &parent = QModelIndex()) const;
+    virtual QVariant data(const QMo
