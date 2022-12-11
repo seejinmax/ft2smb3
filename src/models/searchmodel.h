@@ -41,4 +41,4 @@ public:
     virtual QVariant data(const QModelIndex &index, int role) const;
     QHash<int, QByteArray> roleNames() const {return m_hash;}
 
-    bool insertRow
+    bool insertRows(int position, int rows, Track *item, const QMode
