@@ -39,4 +39,6 @@ public:
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
     virtual QVariant data(const QModelIndex &index, int role) const;
-    QHash<int, QByteArray> roleNa
+    QHash<int, QByteArray> roleNames() const {return m_hash;}
+
+    bool insertRow
