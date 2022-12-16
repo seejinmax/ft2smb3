@@ -42,4 +42,6 @@ public:
     QHash<int, QByteArray> roleNames() const {return m_hash;}
 
     bool insertRows(int position, int rows, Track *item, const QModelIndex &index = QModelIndex());
-    bool removeRows(int position, int rows, const QModelIndex &index = QModelIndex(
+    bool removeRows(int position, int rows, const QModelIndex &index = QModelIndex());
+
+    Q_INVOKABLE void searchTracks(QString q);
