@@ -45,3 +45,5 @@ public:
     bool removeRows(int position, int rows, const QModelIndex &index = QModelIndex());
 
     Q_INVOKABLE void searchTracks(QString q);
+    Q_INVOKABLE void playTrack();
+    Q_INVOKABLE voi
