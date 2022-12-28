@@ -47,4 +47,5 @@ public:
     Q_INVOKABLE void searchTracks(QString q);
     Q_INVOKABLE void playTrack();
     Q_INVOKABLE void sendFeedback(QString type);
-    Q_INVOKABLE void 
+    Q_INVOKABLE void setCurrentIndex(int currentIndex);
+    in
