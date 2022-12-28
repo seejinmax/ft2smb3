@@ -50,4 +50,6 @@ public:
     Q_INVOKABLE void setCurrentIndex(int currentIndex);
     int currentIndex() {return m_currentIndex;}
     QString currentSong() { return m_currentSong;}
-    QString curre
+    QString currentArtist() { return m_currentArtist;}
+     bool m_loading;
+  
