@@ -49,4 +49,5 @@ public:
     Q_INVOKABLE void sendFeedback(QString type);
     Q_INVOKABLE void setCurrentIndex(int currentIndex);
     int currentIndex() {return m_currentIndex;}
-    QString cur
+    QString currentSong() { return m_currentSong;}
+    QString curre
