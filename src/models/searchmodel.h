@@ -52,4 +52,5 @@ public:
     QString currentSong() { return m_currentSong;}
     QString currentArtist() { return m_currentArtist;}
      bool m_loading;
-  
+      QList<Track*> m_playList;
+      Q_INVOKABLE QList<Track*> playli
