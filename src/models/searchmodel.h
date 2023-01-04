@@ -53,4 +53,7 @@ public:
     QString currentArtist() { return m_currentArtist;}
      bool m_loading;
       QList<Track*> m_playList;
-      Q_INVOKABLE QList<Track*> playli
+      Q_INVOKABLE QList<Track*> playlist();
+
+signals:
+    void loadFirstDataFinis
