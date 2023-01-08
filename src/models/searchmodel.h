@@ -56,4 +56,5 @@ public:
       Q_INVOKABLE QList<Track*> playlist();
 
 signals:
-    void loadFirstDataFinis
+    void loadFirstDataFinished();
+    void currentIndexChanged(int curr
