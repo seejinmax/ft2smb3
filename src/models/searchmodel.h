@@ -57,4 +57,7 @@ public:
 
 signals:
     void loadFirstDataFinished();
-    void currentIndexChanged(int curr
+    void currentIndexChanged(int currentIndex);
+
+public slots:
+    QVariant get(const in
