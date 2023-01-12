@@ -60,4 +60,7 @@ signals:
     void currentIndexChanged(int currentIndex);
 
 public slots:
-    QVariant get(const in
+    QVariant get(const int idx);
+
+private slots:
+    void getSearchTracksFinished(con
