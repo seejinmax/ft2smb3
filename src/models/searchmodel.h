@@ -63,4 +63,8 @@ public slots:
     QVariant get(const int idx);
 
 private slots:
-    void getSearchTracksFinished(con
+    void getSearchTracksFinished(const QJsonValue &value);
+
+private:
+
+    int m_current
