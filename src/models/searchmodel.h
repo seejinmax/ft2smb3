@@ -67,4 +67,6 @@ private slots:
 
 private:
 
-    int m_current
+    int m_currentIndex;
+    QString batchid;
+    QString m_currentSong
