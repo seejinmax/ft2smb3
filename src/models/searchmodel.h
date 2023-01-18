@@ -72,4 +72,6 @@ private:
     QString m_currentSong;
     QString m_currentArtist;
 
-    QHash<int,QByte
+    QHash<int,QByteArray> m_hash;
+    ApiRequest* m_api;
+    QJsonVa
