@@ -69,4 +69,7 @@ private:
 
     int m_currentIndex;
     QString batchid;
-    QString m_currentSong
+    QString m_currentSong;
+    QString m_currentArtist;
+
+    QHash<int,QByte
