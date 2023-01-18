@@ -74,4 +74,7 @@ private:
 
     QHash<int,QByteArray> m_hash;
     ApiRequest* m_api;
-    QJsonVa
+    QJsonValue m_oldValue;
+};
+
+#endif // SearchModel_H
