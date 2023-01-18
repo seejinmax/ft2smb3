@@ -1,1 +1,3 @@
-#inc
+#include "settings.h"
+
+Settings::Settings(QObject *parent)
