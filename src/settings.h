@@ -2,4 +2,8 @@
 #define SETTINGS_H
 
 #include <QSettings>
-#include <QStand
+#include <QStandardPaths>
+
+class Settings : public QSettings
+{
+    Q_O
