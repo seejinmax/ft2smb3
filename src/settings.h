@@ -6,4 +6,6 @@
 
 class Settings : public QSettings
 {
-    Q_O
+    Q_OBJECT
+public:
+    explicit Settings(QObject *parent =
