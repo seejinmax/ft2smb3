@@ -28,3 +28,7 @@ public:
 
 
 signals:
+
+};
+
+#endif // TRACK_H
