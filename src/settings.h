@@ -8,4 +8,7 @@ class Settings : public QSettings
 {
     Q_OBJECT
 public:
-    explicit Settings(QObject *parent =
+    explicit Settings(QObject *parent = nullptr);
+};
+
+#endif // SETTINGS_H
