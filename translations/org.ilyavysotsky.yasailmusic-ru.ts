@@ -3,4 +3,5 @@
 <TS version="2.1" language="ru_RU" sourcelanguage="en_US">
 <context>
     <name>LoginPage</name>
-    
+    <message>
+        <location filename="../q
