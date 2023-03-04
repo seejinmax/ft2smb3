@@ -4,4 +4,5 @@
 <context>
     <name>LoginPage</name>
     <message>
-        <location filename="../q
+        <location filename="../qml/pages/LoginPage.qml" line="26"/>
+        <source>Login:
