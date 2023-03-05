@@ -9,4 +9,5 @@
         <translation>Логин:</translation>
     </message>
     <message>
-        <location filena
+        <location filename="../qml/pages/LoginPage.qml" line="40"/>
+        <source>
