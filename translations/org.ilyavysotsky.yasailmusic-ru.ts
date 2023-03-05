@@ -5,4 +5,6 @@
     <name>LoginPage</name>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="26"/>
-        <source>Login:
+        <source>Login:</source>
+        <translation>Логин:</translation>
+    </
