@@ -7,4 +7,6 @@
         <location filename="../qml/pages/LoginPage.qml" line="26"/>
         <source>Login:</source>
         <translation>Логин:</translation>
-    </
+    </message>
+    <message>
+        <location filena
