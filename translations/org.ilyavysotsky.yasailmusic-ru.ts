@@ -10,4 +10,5 @@
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="40"/>
-        <source>
+        <source>Password:</source>
+        <translation>Пароль:</translat
