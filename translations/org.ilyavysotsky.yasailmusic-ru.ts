@@ -14,4 +14,5 @@
         <translation>Пароль:</translation>
     </message>
     <message>
-        <location
+        <location filename="../qml/pages/LoginPage.qml" line="56"/>
+   
