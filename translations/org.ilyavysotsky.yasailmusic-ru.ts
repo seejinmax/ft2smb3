@@ -16,4 +16,6 @@
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="56"/>
         <source>Code:</source>
-        <translation>Ко
+        <translation>Код:</translation>
+    </message>
+    <message
