@@ -18,4 +18,5 @@
         <source>Code:</source>
         <translation>Код:</translation>
     </message>
-    <message
+    <message>
+        <location filename="../qml/pages/LoginPage.qm
