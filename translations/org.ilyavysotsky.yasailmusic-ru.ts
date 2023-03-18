@@ -23,4 +23,5 @@
         <source>Login</source>
         <translation>Войти</translation>
     </message>
-    <mes
+    <message>
+        <location filename="../qml/pages/LoginPage.qml" line
