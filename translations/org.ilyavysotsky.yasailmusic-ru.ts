@@ -24,4 +24,5 @@
         <translation>Войти</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LoginPage.qml" line
+        <location filename="../qml/pages/LoginPage.qml" line="91"/>
+        <source>Logged into Yandex Music</sourc
