@@ -31,4 +31,4 @@
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="95"/>
         <source>Login fail!</source>
-   
+        <translation>Ошибка входа!</translation
