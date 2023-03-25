@@ -29,4 +29,4 @@
         <translation>Успешный вход в Яндекс Музыку</translation>
     </message>
     <message>
-        <locati
+        <location filename="../qml/pages/LoginPage.qml" line=
