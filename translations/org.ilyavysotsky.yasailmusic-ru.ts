@@ -29,4 +29,6 @@
         <translation>Успешный вход в Яндекс Музыку</translation>
     </message>
     <message>
-        <location filename="../qml/pages/LoginPage.qml" line=
+        <location filename="../qml/pages/LoginPage.qml" line="95"/>
+        <source>Login fail!</source>
+   
