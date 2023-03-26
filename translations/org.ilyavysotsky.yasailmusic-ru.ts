@@ -35,4 +35,6 @@
     </message>
 </context>
 <context>
-    <name>MainPage
+    <name>MainPage</name>
+    <message>
+        <location filename=".
