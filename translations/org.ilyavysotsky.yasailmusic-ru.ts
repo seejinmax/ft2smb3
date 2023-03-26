@@ -37,4 +37,5 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename=".
+        <location filename="../qml/pages/MainPage.qml" line="22"/>
+        <sourc
