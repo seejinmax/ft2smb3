@@ -39,4 +39,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="22"/>
         <source>Search</source>
-        <translation>Поиск</t
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <location fil
