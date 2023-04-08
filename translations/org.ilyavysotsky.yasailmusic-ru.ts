@@ -42,4 +42,4 @@
         <translation>Поиск</translation>
     </message>
     <message>
-        <location fil
+        <location filename="../qml/pages/MainPage.qml" line="26"/>
