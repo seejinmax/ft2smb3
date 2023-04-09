@@ -43,3 +43,5 @@
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="26"/>
+        <source>Logout</source>
+        <transla
