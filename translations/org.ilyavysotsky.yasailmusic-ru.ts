@@ -47,4 +47,4 @@
         <translation>Выход</translation>
     </message>
     <message>
-        
+        <location filename="../qml/pages/MainPage.qml" line="3
