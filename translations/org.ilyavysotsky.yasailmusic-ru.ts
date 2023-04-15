@@ -47,4 +47,6 @@
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="3
+        <location filename="../qml/pages/MainPage.qml" line="34"/>
+        <source>View playlist</source>
+        <t
