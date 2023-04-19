@@ -50,4 +50,6 @@
         <location filename="../qml/pages/MainPage.qml" line="34"/>
         <source>View playlist</source>
         <translation>Просмотр плейлиста</translation>
-    </
+    </message>
+    <message>
+        <location filename="../q
