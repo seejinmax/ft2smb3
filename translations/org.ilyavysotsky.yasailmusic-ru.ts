@@ -52,4 +52,5 @@
         <translation>Просмотр плейлиста</translation>
     </message>
     <message>
-        <location filename="../q
+        <location filename="../qml/pages/MainPage.qml" line="41"/>
+        <source>My w
