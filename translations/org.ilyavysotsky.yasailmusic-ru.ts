@@ -54,4 +54,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="41"/>
         <source>My wave</source>
-        <translation>Моя волна</translation
+        <translation>Моя волна</translation>
+    </message>
+    <message>
+     
