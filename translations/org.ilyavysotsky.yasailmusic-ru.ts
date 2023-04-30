@@ -57,4 +57,6 @@
         <translation>Моя волна</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPa
+        <location filename="../qml/pages/MainPage.qml" line="83"/>
+        <source>Play</source>
+    
