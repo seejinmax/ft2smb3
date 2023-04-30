@@ -59,4 +59,5 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="83"/>
         <source>Play</source>
-    
+        <translation>Играть</translation>
+    </message>
