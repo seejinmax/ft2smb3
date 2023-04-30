@@ -57,4 +57,4 @@
         <translation>Моя волна</translation>
     </message>
     <message>
-     
+        <location filename="../qml/pages/MainPa
