@@ -61,3 +61,5 @@
         <source>Play</source>
         <translation>Играть</translation>
     </message>
+    <message>
+        <location filename=".
