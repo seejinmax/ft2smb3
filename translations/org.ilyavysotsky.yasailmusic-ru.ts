@@ -62,4 +62,5 @@
         <translation>Играть</translation>
     </message>
     <message>
-        <location filename=".
+        <location filename="../qml/pages/MainPage.qml" line="83"/>
+        <source>Pause
