@@ -64,4 +64,8 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="83"/>
         <source>Pause</source>
-        <translation>Пауза</tra
+        <translation>Пауза</translation>
+    </message>
+</context>
+<context>
+    <name
