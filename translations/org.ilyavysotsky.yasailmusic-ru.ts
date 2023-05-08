@@ -68,4 +68,6 @@
     </message>
 </context>
 <context>
-    <name
+    <name>PlaylistPage</name>
+    <message>
+        <location
