@@ -70,4 +70,5 @@
 <context>
     <name>PlaylistPage</name>
     <message>
-        <location
+        <location filename="../qml/pages/PlaylistPage.qml" line="15"/>
+  
