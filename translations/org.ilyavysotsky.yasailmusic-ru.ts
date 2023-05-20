@@ -76,4 +76,6 @@
     </message>
 </context>
 <context>
-    <name>SearchPage
+    <name>SearchPage</name>
+    <message>
+        <location filename="../qm
