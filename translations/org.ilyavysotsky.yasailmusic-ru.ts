@@ -73,4 +73,7 @@
         <location filename="../qml/pages/PlaylistPage.qml" line="15"/>
         <source>Current tracks</source>
         <translation>Текущие треки</translation>
-    </mes
+    </message>
+</context>
+<context>
+    <name>SearchPage
