@@ -81,4 +81,7 @@
         <location filename="../qml/pages/SearchPage.qml" line="19"/>
         <source>Search audio...</source>
         <translation type="unfinished">Поиск аудио...</translation>
-   
+    </message>
+</context>
+<context>
+    <name>YaSailMusic</name>
