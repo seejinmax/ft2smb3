@@ -79,4 +79,5 @@
     <name>SearchPage</name>
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="19"/>
-        <source>Se
+        <source>Search audio...</source>
+        <translation ty
