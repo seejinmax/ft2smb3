@@ -78,4 +78,5 @@
 <context>
     <name>SearchPage</name>
     <message>
-        <location filename="../qm
+        <location filename="../qml/pages/SearchPage.qml" line="19"/>
+        <source>Se
