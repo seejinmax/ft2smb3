@@ -80,4 +80,5 @@
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="19"/>
         <source>Search audio...</source>
-        <translation ty
+        <translation type="unfinished">Поиск аудио...</translation>
+   
