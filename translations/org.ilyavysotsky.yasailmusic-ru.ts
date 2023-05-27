@@ -85,3 +85,5 @@
 </context>
 <context>
     <name>YaSailMusic</name>
+    <message>
+        <location filename="../qml/YaSa
