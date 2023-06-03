@@ -88,3 +88,5 @@
     <message>
         <location filename="../qml/YaSailMusic.qml" line="72"/>
         <source>Loading</source>
+        <translation>Загрузка</translation>
+    </m
