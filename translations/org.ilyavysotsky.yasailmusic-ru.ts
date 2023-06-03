@@ -91,4 +91,6 @@
         <translation>Загрузка</translation>
     </message>
     <message>
-        <location filename="../qml/YaSailMusic.qml" line="73"
+        <location filename="../qml/YaSailMusic.qml" line="73"/>
+        <source>tags...</source>
+        <transla
