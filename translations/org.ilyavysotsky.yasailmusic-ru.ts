@@ -91,4 +91,4 @@
         <translation>Загрузка</translation>
     </message>
     <message>
-        <location filename=".
+        <location filename="../qml/YaSailMusic.qml" line="73"
