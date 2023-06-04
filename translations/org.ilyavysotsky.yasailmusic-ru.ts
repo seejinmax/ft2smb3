@@ -93,4 +93,7 @@
     <message>
         <location filename="../qml/YaSailMusic.qml" line="73"/>
         <source>tags...</source>
-        <transla
+        <translation>тэги...</translation>
+    </message>
+</context>
+</TS>
